@@ -1,1 +1,32 @@
-/* this is a comment */
+/* Used so we can easily change the theme if we don't like them later, just change them here not everywhere else */
+:root { 
+    /*  Usage example in CSS:
+        Colors:
+        background-color: var(--background-color-1);
+        color: var(--primary-text-color);
+    */
+
+    /* Backgrounds and Text Colors */
+    --background-color-1: #e9e4d4;
+    --background-color-2: #d6d1c4;
+    --background-color-3: #c5bfaf;
+    --footer-color: #2b2621;
+    --header-color: #1b1a17;
+    --subheader-color: #2e2b28;
+    --primary-text-color: #3c3b37;
+    --secondary-text-color: #6c6a63;
+    --nav-background-color: #0f0e0e;
+    --nav-text-color: #b39c4d;
+    --nav-hover-color: #4f2c2c;
+
+    /* Various Accents */
+    --highlight-gold-color: #b39c4d;
+    --highlight-red-color: #6c2d2c;
+    --highlight-navy-color: #1a2238;
+    --highlight-mossy-color: #7a7f5c;
+
+    /* Brand Colors */
+    --brand-black: #0f0e0e;
+    --brand-gold: #b39c4d;
+    --brand-red: #4f2c2c;
+}
