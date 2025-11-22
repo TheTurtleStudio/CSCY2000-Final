@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Deans</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1 class="dean-page-heading">Current Deans</h2>
+    </header>
+    <main>
+        <section>
+            <ul class="dean-list mobile">
+                <!-- Dean card for Riley -->
+                <li>
+                    <a class="dean-link" href="portfolios/Riley.html">
+                        <div class="dean-card">
+                            <!-- Negatively delay animation to put it out of sync with others, we do this with the rest to make it look random-->
+                            <img class="dean-photo" style="animation-delay: -0.515s" src="images/defaultDean.jpg" alt="Photo of Riley McCurdy">
+                            <!-- Maybe I style this better, look into later... -->
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Riley McCurdy</h3>
+                                <p class="dean-description">Dean of Arcane</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!-- Dean card for May -->
+                <li>
+                    <a class="dean-link" href="portfolios/May.html">
+                        <div class="dean-card">
+                            <img class="dean-photo" style="animation-delay: -1.682s" src="images/defaultDean.jpg" alt="Photo of May Miura">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. May Miura</h3>
+                                <p class="dean-description">Dean of Thunder and Light</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!-- Dean card for Brayden -->
+                <li>
+                    <a class="dean-link" href="portfolios/Brayden.html">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/defaultDean.jpg" alt="Photo of Brayden Peterson">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Brayden Peterson</h3>
+                                <p class="dean-description">Dean of Ghoul Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!-- Dean card for Lanjen -->
+                <li>
+                    <a class="dean-link" href="portfolios/Lanjen.html">
+                        <div class="dean-card">
+                            <img class="dean-photo" style="animation-delay: -1.162s" src="images/defaultDean.jpg" alt="Photo of Lanjen Hsieh">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Lanjen Hsieh</h3>
+                                <p class="dean-description">Dean of Water</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

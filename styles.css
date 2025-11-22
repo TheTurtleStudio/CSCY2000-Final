@@ -29,4 +29,120 @@
     --brand-black: #0f0e0e;
     --brand-gold: #b39c4d;
     --brand-red: #4f2c2c;
+
+    /* Font Families */
+    --font-cormorant: "Cormorant Garamond", serif;
+    --font-cinzel: "Cinzel", serif;
+}
+
+/* General Styles */
+body {
+    background-color: var(--background-color-1);
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 2em;
+}
+
+
+/* Styles for deans.html */
+.dean-page-heading {
+    font-family: var(--font-cinzel);
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.dean-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 4px solid var(--highlight-gold-color);
+    box-shadow: var(--highlight-red-color) 0px 5px 10px;
+    animation: dean-card-image 2s ease-in-out infinite alternate;
+}
+
+.dean-card {
+    background-color: var(--background-color-2);
+    border: 1px solid var(--highlight-red-color);
+    border-radius: 5px;
+    padding: 2em 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+.dean-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.dean-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.75em 0;
+    font-family: var(--font-cinzel);
+}
+
+.dean-description {
+    font-size: 1.25em;
+    color: var(--secondary-text-color);
+    font-family: var(--font-cormorant);
+    font-weight: bold;
+}
+
+.dean-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dean-link:hover .dean-card {
+    background-color: var(--background-color-3);
+}
+
+.dean-link:hover .dean-name {
+    animation: dean-name-hoverGrow 0.5s forwards;
+}
+
+.dean-link .dean-name {
+    animation: dean-name-hoverShrink 0.5s forwards;
+}
+
+/* Animations for dean cards */
+@keyframes dean-name-hoverShrink {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes dean-name-hoverGrow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes dean-card-image {
+    from {
+        transform: translateX(-5px);
+        rotate: 2deg;
+    }
+    to {
+        transform: translateX(5px);
+        rotate: -2deg;
+    }
+}
+
+/* Media query for deans page for mobile devices */
+@media screen and (max-width: 769px) {
+    .mobile {
+        grid-template-columns: auto;
+    }
 }
