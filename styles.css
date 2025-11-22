@@ -40,11 +40,29 @@ body {
     background-color: var(--background-color-1);
     color: var(--primary-text-color);
     margin: 0;
-    padding: 2em;
+    padding: 0;
 }
 
+footer {
+    font-family: var(--font-cormorant);
+    font-size: 1.125em;
+    color: var(--background-color-1);
+    background-color: var(--footer-color);
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em 0;
+}
+
+footer a {
+    color: var(--highlight-mossy-color);
+    text-decoration: none;
+}
 
 /* Styles for deans.html */
+.dean-container {
+    padding: 0 2em;
+}
+
 .dean-page-heading {
     font-family: var(--font-cinzel);
     font-size: 3.5em;
