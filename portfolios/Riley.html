@@ -1,12 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Riley McCurdy — Dean of Arcane Magic</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap");
+
+      body {
+        background: #f5e8d0;
+        font-family: "EB Garamond", serif;
+        color: #3a2a1a;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .grimoire-frame {
+        background: white;
+        border: 3px solid #6b4a3a;
+        border-radius: 10px;
+        padding: 30px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+      }
+
+      .header h1 {
+        font-family: "Cinzel", serif;
+        font-size: 2.5rem;
+        color: #6b4a3a;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .header p {
+        font-style: italic;
+        margin-top: 10px;
+        max-width: 800px;
+        margin-inline: auto;
+      }
+
+      .profile-section {
+        display: flex;
+        gap: 30px;
+        margin: 25px 0;
+        align-items: flex-start;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #8b6b4d;
+        border-radius: 50%;
+        object-fit: cover;
+        background: #e0d5c0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        color: #6b4a3a;
+        font-family: "Cinzel", serif;
+      }
+
+      .bio-text {
+        flex: 1;
+      }
+
+      .bio-text h2 {
+        font-family: "Cinzel", serif;
+        color: #6b4a3a;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+
+      .bio-text p {
+        text-align: justify;
+        margin-bottom: 15px;
+      }
+
+      .philosophy {
+        background: #fdf9f3;
+        padding: 20px;
+        border-left: 3px solid #d4af37;
+        border-radius: 6px;
+        margin: 25px 0;
+        font-style: italic;
+      }
+
+      .philosophy h3 {
+        font-family: "Cinzel", serif;
+        color: #6b4a3a;
+        margin-top: 0;
+      }
+
+      .achievements h3,
+      .teaching h3 {
+        font-family: "Cinzel", serif;
+        color: #6b4a3a;
+        text-transform: uppercase;
+        margin-top: 25px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      .contact-section {
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #8b6b4d;
+        font-style: italic;
+        color: #6b4a3a;
+      }
+
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #6b4a3a;
+      }
+
+      @media (max-width: 768px) {
+        .profile-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .profile-image {
+          margin: 0 auto;
+        }
+
+        .header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grimoire-frame">
+        <div class="header">
+          <h1>Dr. Riley McCurdy</h1>
+          <p>Dean of Arcane Magic • Southern Hogwarts University</p>
+        </div>
+
+        <div class="profile-section">
+          <div class="profile-image" aria-label="Portrait of Dr. Riley McCurdy">
+            🔮
+          </div>
+          <div class="bio-text">
+            <h2>Arcane Scholar & Mentor</h2>
+            <p>
+              Dr. Riley McCurdy has served as Dean of Arcane Magic at Southern
+              Hogwarts University for over twelve years. A prodigy in
+              metaphysical spell construction, Dr. McCurdy earned their
+              doctorate in Advanced Thaumaturgy from the Obsidian Athenaeum at
+              the age of twenty-four—the youngest in the institution’s history.
+            </p>
+            <p>
+              Their research bridges classical incantation theory with modern
+              chaos-magic frameworks, yielding breakthroughs in sustainable
+              spell-weaving and ethical enchantment design. Under their
+              leadership, the Arcane Studies department has become a beacon for
+              innovators and traditionalists alike.
+            </p>
+          </div>
+        </div>
+
+        <div class="philosophy">
+          <h3>Teaching Philosophy</h3>
+          <p>
+            “Magic is not merely power—it is responsibility, precision, and
+            poetry. I challenge my students not just to cast spells, but to
+            understand why they work, how they shape reality, and what they
+            reveal about the caster’s soul.”
+          </p>
+        </div>
+
+        <div class="achievements">
+          <h3>Notable Achievements</h3>
+          <ul>
+            <li>
+              Author of
+              <em>The Weave and the Word: Foundations of Ethical Spellcraft</em>
+              (2023)
+            </li>
+            <li>
+              Recipient of the International Order of the Silver Quill (2021)
+            </li>
+            <li>
+              Developed the "Luminous Syntax" curriculum adopted by 14 magical
+              universities worldwide
+            </li>
+            <li>
+              Pioneer in non-verbal, intent-based arcana for neurodivergent
+              practitioners
+            </li>
+          </ul>
+        </div>
+
+        <div class="teaching">
+          <h3>Courses Taught</h3>
+          <ul>
+            <li>ARC 401: Advanced Theoretical Thaumaturgy</li>
+            <li>ARC 550: Ethics of High Magic</li>
+            <li>ARC 602: Independent Research in Arcane Innovation</li>
+            <li>HON 399: The Philosophy of Magical Consequence</li>
+          </ul>
+        </div>
+
+        <div class="contact-section">
+          <p>
+            Office Hours: Mondays & Thursdays, 2–5 PM (by appointment) • Tower
+            of Echoes, Room 7B<br />
+            Email: r.mccurdy@shu-magic.edu.uk
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-grid mobile-footer">
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="deans.html" class="footer-link">Deans List</a>
+          <a href="sports.html" class="footer-link">Sports</a>
+          <a href="student_life.html" class="footer-link">Student Life</a>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <a href="apply.html" class="footer-link">Apply</a>
+          <a href="areas_of_study.html" class="footer-link">Study Pathways</a>
+        </div>
+        <div class="footer-section">
+          <h3>Faculty / Staff</h3>
+          <a href="portfolios/Brayden.html" class="footer-link"
+            >Dr. Brayden Peterson</a
+          >
+          <a href="portfolios/Lanjen.html" class="footer-link"
+            >Dr. Lanjen Hsieh</a
+          >
+          <a href="portfolios/May.html" class="footer-link">Dr. May Miura</a>
+          <a href="portfolios/Riley.html" class="footer-link"
+            >Dr. Riley McCurdy</a
+          >
+        </div>
+        <div class="footer-section">
+          <img
+            src="images/logo.png"
+            alt="Southern Hogwarts University Logo"
+            class="footer-logo"
+          />
+          <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
+        </div>
+      </div>
+      <p class="footer-page-credit">
+        Portfolio of Dr. Riley McCurdy — Dean of Arcane Magic
+      </p>
+    </footer>
+  </body>
 </html>
