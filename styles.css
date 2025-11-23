@@ -212,3 +212,169 @@ footer a:hover {
         grid-template-columns: auto;
     }
 }
+
+/* ----------------------------------------------------------------------------------- */
+
+.shu-navbar {
+  background-color: var(--nav-background-color);
+  font-family: var(--font-cinzel);
+  position: sticky;
+  top: 16px; /* Adds space from very top of viewport */
+  z-index: 100;
+  /* Fully rounded corners — all four */
+  border-radius: 14px;
+  /* Soft, magical shadow */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+  /* Push body content down generously */
+  margin: 0 auto 48px auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+}
+
+.nav-home {
+  color: var(--brand-gold);
+  font-size: 1.45rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.6rem;
+}
+
+.nav-list a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: 0.4rem 0;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--brand-gold);
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--brand-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list a:focus::after {
+  width: 100%;
+}
+
+.nav-apply {
+  background: transparent;
+  border: 1px solid var(--brand-gold);
+  color: var(--brand-gold) !important;
+  padding: 0.4rem 1.1rem !important;
+  border-radius: 6px;
+  margin-left: 1.3rem;
+  font-family: var(--font-cinzel);
+  font-size: 1.05rem !important;
+  transition: all 0.25s;
+}
+
+.nav-apply:hover {
+  background: rgba(179, 156, 77, 0.15);
+}
+
+/* Mobile toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 24px;
+  justify-content: space-between;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color: var(--nav-text-color);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .shu-navbar {
+    top: 12px;
+    margin: 0 16px 48px 16px;
+    border-radius: 16px;
+  }
+
+  .nav-wrapper {
+    padding: 0 1.2rem;
+    height: 60px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--nav-background-color);
+    flex-direction: column;
+    padding: 1.8rem;
+    gap: 1.4rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+    display: none;
+    /* Fully rounded on mobile too */
+    border-radius: 0 0 16px 16px;
+    margin-top: 8px;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-apply {
+    margin-left: 0;
+    align-self: flex-start;
+    margin-top: 0.6rem;
+  }
+
+  /* Hamburger to X */
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
