@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Areas of Study - Southern Hogwarts University</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap");
+
+      body {
+        background: #f5e8d0;
+        font-family: "EB Garamond", serif;
+        color: #3a2a1a;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .grimoire-frame {
+        background: white;
+        border: 3px solid #6b4a3a;
+        border-radius: 10px;
+        padding: 25px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+      }
+
+      .header h1 {
+        font-family: "Cinzel", serif;
+        font-size: 2.5rem;
+        color: #6b4a3a;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .header p {
+        font-style: italic;
+        margin-top: 10px;
+        max-width: 800px;
+        margin-inline: auto;
+      }
+
+      .magic-seal {
+        text-align: center;
+        font-family: "Cinzel", serif;
+        color: #6b4a3a;
+        margin: 25px 0;
+        font-size: 1.8rem;
+      }
+
+      .path-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .path-card {
+        background: white;
+        border: 2px solid #8b6b4d;
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      .symbol {
+        font-family: "Cinzel", serif;
+        font-size: 3.5rem;
+        color: #6b4a3a;
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .path-card h3 {
+        font-family: "Cinzel", serif;
+        color: #6b4a3a;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 15px 0 10px;
+      }
+
+      .path-card p {
+        font-style: italic;
+        text-align: justify;
+        padding: 8px 0;
+      }
+
+      .requirements {
+        margin-top: 15px;
+        padding: 12px;
+        background: #f9f5ed;
+        border-left: 3px solid #d4af37;
+        border-radius: 4px;
+      }
+
+      .requirements h4 {
+        color: #6b4a3a;
+        margin-top: 0;
+      }
+
+      .apply-section {
+        background: white;
+        border: 2px solid #8b6b4d;
+        border-radius: 8px;
+        padding: 25px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .apply-section h2 {
+        font-family: "Cinzel", serif;
+        color: #6b4a3a;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+
+      .application-form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fdfdfd;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #8b6b4d;
+        border-radius: 4px;
+        font-family: "EB Garamond", serif;
+        font-size: 1rem;
+      }
+
+      .submit-btn {
+        background: #6b4a3a;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-family: "Cinzel", serif;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      .div-text {
+        text-align: center;
+        margin-top: 30px;
+        font-style: italic;
+        color: #6b4a3a;
+        padding-top: 20px;
+        border-top: 1px solid #8b6b4d;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 8px 0;
+      }
+
+      li {
+        margin: 4px 0;
+      }
+
+      @media (max-width: 768px) {
+        .path-grid {
+          grid-template-columns: 1fr;
+        }
+        .header h1 {
+          font-size: 2rem;
+        }
+        .symbol {
+          font-size: 2.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grimoire-frame">
+        <div class="header">
+          <h1>Areas of Study</h1>
+          <p>
+            Discover your path to magical mastery at Southern Hogwarts
+            University — where ancient wisdom meets modern arcane excellence
+          </p>
+        </div>
+
+        <div class="magic-seal">ACADEMIC PATHS</div>
+
+        <div class="path-grid">
+          <div class="path-card">
+            <div class="symbol">👻</div>
+            <h3>Ghoul Studies</h3>
+            <p>
+              Delve into the mysteries of the spectral realm, learning to
+              commune with spirits and understand the delicate balance between
+              life and death. Students master the art of protective wards,
+              spirit communication, and the ethical treatment of supernatural
+              entities.
+            </p>
+            <div class="requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Strong constitution and mental fortitude</li>
+                <li>Open mind and willingness to confront the unknown</li>
+                <li>Completion of Basic Magical Theory</li>
+                <li>Recommendation from a practicing spirit medium</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="path-card">
+            <div class="symbol">💧</div>
+            <h3>Water Magic</h3>
+            <p>
+              Harness the fluid power of water through advanced hydrokinetic
+              techniques. Students learn to manipulate water in all its forms,
+              from gentle streams to devastating tsunamis, while mastering the
+              art of healing waters and aquatic communication.
+            </p>
+            <div class="requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Natural affinity for water and emotional sensitivity</li>
+                <li>Completion of Elemental Foundations</li>
+                <li>Ability to swim proficiently</li>
+                <li>Understanding of marine ecosystems</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="path-card">
+            <div class="symbol">⚡</div>
+            <h3>Thunder and Lightning</h3>
+            <p>
+              Command the raw power of the storm and lightning. Students learn
+              to channel electrical energy, create protective barriers, and
+              master the ancient art of storm-calling. This path requires
+              exceptional focus and mental discipline.
+            </p>
+            <div class="requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>High magical sensitivity and energy control</li>
+                <li>Completion of Advanced Energy Theory</li>
+                <li>Physical endurance and quick reflexes</li>
+                <li>Understanding of meteorological patterns</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="path-card">
+            <div class="symbol">🔮</div>
+            <h3>Arcane Studies</h3>
+            <p>
+              Master the fundamental forces of magic itself. Students explore
+              the deepest mysteries of magical theory, learn to create new
+              spells, and study the ancient texts that form the foundation of
+              all magical knowledge. The most challenging and prestigious path.
+            </p>
+            <div class="requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Exceptional magical aptitude and intellectual curiosity</li>
+                <li>Completion of all core subjects with distinction</li>
+                <li>Proficiency in at least three magical disciplines</li>
+                <li>Approval from the Dean of Arcane Studies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="apply-section">
+          <h2>Apply to Southern Hogwarts University</h2>
+          <p>
+            Begin your journey toward magical mastery by submitting your
+            application today
+          </p>
+          <form class="application-form">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                min="16"
+                max="24"
+                required
+                placeholder="Enter your age"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="path">Area of Study:</label>
+              <select id="path" name="path" required>
+                <option value="">Select your preferred area of study</option>
+                <option value="ghoul">Ghoul Studies</option>
+                <option value="water">Water Magic</option>
+                <option value="thunder">Thunder and Lightning</option>
+                <option value="arcane">Arcane Studies</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Magical Experience:</label>
+              <textarea
+                id="experience"
+                name="experience"
+                rows="4"
+                placeholder="Describe your previous magical training or experiences..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="statement">Personal Statement:</label>
+              <textarea
+                id="statement"
+                name="statement"
+                rows="4"
+                placeholder="Why do you wish to study at Southern Hogwarts University?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+          </form>
+        </div>
+
+        <div class="div-text">
+          "At Southern Hogwarts University, we believe that every student has
+          the potential to achieve magical greatness through dedication,
+          discipline, and proper guidance. Our faculty stands ready to nurture
+          your unique magical talents."
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-grid mobile-footer">
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="deans.html" class="footer-link">Deans List</a>
+          <a href="sports.html" class="footer-link">Sports</a>
+          <a href="student_life.html" class="footer-link">Student Life</a>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <a href="NEEDS_IMPLEMENTED" class="footer-link">Apply</a>
+          <a href="areas_of_study.html" class="footer-link">Study Pathways</a>
+        </div>
+        <div class="footer-section">
+          <h3>Faculty / Staff</h3>
+          <a href="portfolios/Brayden.html" class="footer-link"
+            >Dr. Brayden Peterson</a
+          >
+          <a href="portfolios/Lanjen.html" class="footer-link"
+            >Dr. Lanjen Hsieh</a
+          >
+          <a href="portfolios/May.html" class="footer-link">Dr. May Miura</a>
+          <a href="portfolios/Riley.html" class="footer-link"
+            >Dr. Riley McCurdy</a
+          >
+        </div>
+        <div class="footer-section">
+          <img
+            src="images/logo.png"
+            alt="Souther Hogwarts University Logo"
+            class="footer-logo"
+          />
+          <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
+          <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
+        </div>
+      </div>
+      <p class="footer-page-credit">
+        Areas of Study Page Created By:
+        <a href="portfolios/Riley.html">Riley McCurdy</a>
+      </p>
+    </footer>
+  </body>
+</html>
