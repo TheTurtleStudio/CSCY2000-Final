@@ -7,6 +7,53 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+      <nav
+        class="shu-navbar"
+        aria-label="Southern Hogwarts University navigation"
+      >
+        <div class="nav-wrapper">
+          <a href="index.html" class="nav-home">Southern Hogwarts University</a>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="nav-links" class="nav-list">
+            <li><a href="deans.html">Deans</a></li>
+            <li><a href="areas_of_study.html">Areas of Study</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="student_life.html">Student Life</a></li>
+            <li><a href="areas_of_study.html" class="nav-apply">Apply</a></li>
+          </ul>
+        </div>
+      </nav>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.querySelector(".nav-toggle");
+          const nav = document.getElementById("nav-links");
+
+          toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+            toggle.setAttribute("aria-expanded", !isExpanded);
+            nav.classList.toggle("active");
+          });
+
+          // Close when clicking outside
+          document.addEventListener("click", (e) => {
+            if (
+              !e.target.closest(".shu-navbar") &&
+              nav.classList.contains("active")
+            ) {
+              nav.classList.remove("active");
+              toggle.setAttribute("aria-expanded", "false");
+            }
+          });
+        });
+      </script>
+    </header>
 </body>
 </html>
