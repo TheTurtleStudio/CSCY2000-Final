@@ -58,6 +58,54 @@ footer a {
     text-decoration: none;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 0 5%;
+}
+
+.footer-section {
+    margin: 0;
+    overflow:hidden;
+}
+
+.footer-link {
+    display: block;
+    margin: 0.5em auto;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.footer-logo {
+    object-fit: contain;
+    width: 50%;
+}
+
+.footer-page-credit {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .footer-grid {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 40%;
+        margin-top: 3em;
+    }
+    
+    .footer-page-credit {
+        margin-top: 3em;
+    }
+}
+
 /* Styles for deans.html */
 .dean-container {
     padding: 0 2em;
