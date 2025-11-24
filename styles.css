@@ -10,14 +10,17 @@
     --background-color-1: #e9e4d4;
     --background-color-2: #d6d1c4;
     --background-color-3: #c5bfaf;
-    --footer-color: #2b2621;
+    --footer-color: #0f0e0e;
+    --footer-link-color: #b39c4d;
+    --footer-link-hover-color: #6c2d2c;
+    --footer-text-color: #e9e4d4;
     --header-color: #1b1a17;
     --subheader-color: #2e2b28;
     --primary-text-color: #3c3b37;
     --secondary-text-color: #6c6a63;
     --nav-background-color: #0f0e0e;
     --nav-text-color: #b39c4d;
-    --nav-hover-color: #4f2c2c;
+    --nav-hover-color: #6c2d2c;
 
     /* Various Accents */
     --highlight-gold-color: #b39c4d;
@@ -37,8 +40,8 @@
 
 /* General Styles */
 body {
-    background-color: var(--background-color-1);
-    color: var(--primary-text-color);
+    background-color: var(--background-color-1) !important;
+    color: var(--primary-text-color) !important;
     margin: 0;
     padding: 0;
 }
@@ -46,7 +49,7 @@ body {
 footer {
     font-family: var(--font-cormorant);
     font-size: 1.125em;
-    color: var(--background-color-1);
+    color: var(--footer-text-color);
     background-color: var(--footer-color);
     text-align: center;
     margin-top: 2em;
@@ -54,12 +57,13 @@ footer {
 }
 
 footer a {
-    color: var(--highlight-mossy-color);
+    color: var(--footer-link-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: var(--footer-link-hover-color);
+    text-decoration: none;
 }
 
 .footer-grid {
@@ -90,7 +94,31 @@ footer a:hover {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 769px) {
+.navbar a {
+    color: var(--nav-text-color);
+    font-family: var(--font-cormorant);
+    font-size: 1.25em;
+}
+
+.navbar a:hover {
+    color: var(--nav-hover-color);
+}
+
+.shu-navbar {
+    background-color: var(--nav-background-color);
+    margin-bottom: 2em;
+}
+
+.shu-nav-logo {
+    height: 4em;
+    margin: 0 1em;
+}
+
+.shu-hamburger {
+    margin: 0 1em;
+}
+
+@media screen and (max-width: 768px) {
     .footer-grid {
         grid-template-columns: auto;
         text-align: center;
@@ -104,8 +132,16 @@ footer a:hover {
     .footer-page-credit {
         margin-top: 3em;
     }
+
+    .navbar {
+        position: relative
+    }
+
+    .shu-nav-links {
+    margin: 0 1em;
 }
 
+}
 /* Styles for deans.html */
 .dean-container {
     padding: 0 2em;
