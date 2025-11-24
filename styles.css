@@ -87,6 +87,16 @@ footer a:hover {
 .footer-logo {
     object-fit: contain;
     width: 50%;
+    animation: alternate-reverse footer-logo-float 4s ease-in-out infinite;
+}
+
+@keyframes footer-logo-float {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
 
 .footer-page-credit {
