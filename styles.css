@@ -1,380 +1,291 @@
 /* Used so we can easily change the theme if we don't like them later, just change them here not everywhere else */
-:root { 
-    /*  Usage example in CSS:
+:root {
+  /*  Usage example in CSS:
         Colors:
         background-color: var(--background-color-1);
         color: var(--primary-text-color);
     */
 
-    /* Backgrounds and Text Colors */
-    --background-color-1: #e9e4d4;
-    --background-color-2: #d6d1c4;
-    --background-color-3: #c5bfaf;
-    --footer-color: #2b2621;
-    --header-color: #1b1a17;
-    --subheader-color: #2e2b28;
-    --primary-text-color: #3c3b37;
-    --secondary-text-color: #6c6a63;
-    --nav-background-color: #0f0e0e;
-    --nav-text-color: #b39c4d;
-    --nav-hover-color: #4f2c2c;
+  /* Backgrounds and Text Colors */
+  --background-color-1: #e9e4d4;
+  --background-color-2: #d6d1c4;
+  --background-color-3: #c5bfaf;
+  --footer-color: #2b2621;
+  --header-color: #1b1a17;
+  --subheader-color: #2e2b28;
+  --primary-text-color: #3c3b37;
+  --secondary-text-color: #6c6a63;
+  --nav-background-color: #0f0e0e;
+  --nav-text-color: #b39c4d;
+  --nav-hover-color: #4f2c2c;
 
-    /* Various Accents */
-    --highlight-gold-color: #b39c4d;
-    --highlight-red-color: #6c2d2c;
-    --highlight-navy-color: #1a2238;
-    --highlight-mossy-color: #7a7f5c;
+  /* Various Accents */
+  --highlight-gold-color: #b39c4d;
+  --highlight-red-color: #6c2d2c;
+  --highlight-navy-color: #1a2238;
+  --highlight-mossy-color: #7a7f5c;
 
-    /* Brand Colors */
-    --brand-black: #0f0e0e;
-    --brand-gold: #b39c4d;
-    --brand-red: #4f2c2c;
+  /* Brand Colors */
+  --brand-black: #0f0e0e;
+  --brand-gold: #b39c4d;
+  --brand-red: #4f2c2c;
 
-    /* Font Families */
-    --font-cormorant: "Cormorant Garamond", serif;
-    --font-cinzel: "Cinzel", serif;
+  /* Font Families */
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-cinzel: "Cinzel", serif;
 }
 
 /* General Styles */
 body {
-    background-color: var(--background-color-1);
-    color: var(--primary-text-color);
-    margin: 0;
-    padding: 0;
+  background-color: var(--background-color-1);
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
 }
 
 footer {
-    font-family: var(--font-cormorant);
-    font-size: 1.125em;
-    color: var(--background-color-1);
-    background-color: var(--footer-color);
-    text-align: center;
-    margin-top: 2em;
-    padding: 1em 0;
+  font-family: var(--font-cormorant);
+  font-size: 1.125em;
+  color: var(--background-color-1);
+  background-color: var(--footer-color);
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 0;
 }
 
 footer a {
-    color: var(--highlight-mossy-color);
-    text-decoration: none;
+  color: var(--highlight-mossy-color);
+  text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin: 0 5%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 5%;
 }
 
 .footer-section {
-    margin: 0;
-    overflow:hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 .footer-link {
-    display: block;
-    margin: 0.5em auto;
-    text-decoration: none;
-    width: fit-content;
+  display: block;
+  margin: 0.5em auto;
+  text-decoration: none;
+  width: fit-content;
 }
 
 .footer-logo {
-    object-fit: contain;
-    width: 50%;
+  object-fit: contain;
+  width: 50%;
 }
 
 .footer-page-credit {
-    font-size: 0.8em;
-    margin-bottom: 0;
+  font-size: 0.8em;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 769px) {
-    .footer-grid {
-        grid-template-columns: auto;
-        text-align: center;
-    }
+  .footer-grid {
+    grid-template-columns: auto;
+    text-align: center;
+  }
 
-    .footer-logo {
-        width: 40%;
-        margin-top: 3em;
-    }
-    
-    .footer-page-credit {
-        margin-top: 3em;
-    }
+  .footer-logo {
+    width: 40%;
+    margin-top: 3em;
+  }
+
+  .footer-page-credit {
+    margin-top: 3em;
+  }
 }
 
 /* Styles for deans.html */
 .dean-container {
-    padding: 0 2em;
+  padding: 0 2em;
 }
 
 .dean-page-heading {
-    font-family: var(--font-cinzel);
-    font-size: 3.5em;
-    text-align: center;
-    margin-bottom: 0.25em;
+  font-family: var(--font-cinzel);
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 0.25em;
 }
 
 .dean-photo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border: 4px solid var(--highlight-gold-color);
-    box-shadow: var(--highlight-red-color) 0px 5px 10px;
-    animation: dean-card-image 2s ease-in-out infinite alternate;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 4px solid var(--highlight-gold-color);
+  box-shadow: var(--highlight-red-color) 0px 5px 10px;
+  animation: dean-card-image 2s ease-in-out infinite alternate;
 }
 
 .dean-card {
-    background-color: var(--background-color-2);
-    border: 1px solid var(--highlight-red-color);
-    border-radius: 5px;
-    padding: 2em 1em;
-    margin: 1em;
-    text-align: center;
+  background-color: var(--background-color-2);
+  border: 1px solid var(--highlight-red-color);
+  border-radius: 5px;
+  padding: 2em 1em;
+  margin: 1em;
+  text-align: center;
 }
 
 .dean-list {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .dean-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0.75em 0;
-    font-family: var(--font-cinzel);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.75em 0;
+  font-family: var(--font-cinzel);
 }
 
 .dean-description {
-    font-size: 1.25em;
-    color: var(--secondary-text-color);
-    font-family: var(--font-cormorant);
-    font-weight: bold;
+  font-size: 1.25em;
+  color: var(--secondary-text-color);
+  font-family: var(--font-cormorant);
+  font-weight: bold;
 }
 
 .dean-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .dean-link:hover .dean-card {
-    background-color: var(--background-color-3);
+  background-color: var(--background-color-3);
 }
 
 .dean-link:hover .dean-name {
-    animation: dean-name-hoverGrow 0.5s forwards;
+  animation: dean-name-hoverGrow 0.5s forwards;
 }
 
 .dean-link .dean-name {
-    animation: dean-name-hoverShrink 0.5s forwards;
+  animation: dean-name-hoverShrink 0.5s forwards;
 }
 
 /* Animations for dean cards */
 @keyframes dean-name-hoverShrink {
-    from {
-        transform: scale(1.05);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes dean-name-hoverGrow {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.05);
-    }
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 
 @keyframes dean-card-image {
-    from {
-        transform: translateX(-5px);
-        rotate: 2deg;
-    }
-    to {
-        transform: translateX(5px);
-        rotate: -2deg;
-    }
+  from {
+    transform: translateX(-5px);
+    rotate: 2deg;
+  }
+  to {
+    transform: translateX(5px);
+    rotate: -2deg;
+  }
 }
 
 /* Media query for deans page for mobile devices */
 @media screen and (max-width: 769px) {
-    .mobile {
-        grid-template-columns: auto;
-    }
+  .mobile {
+    grid-template-columns: auto;
+  }
 }
 
 /* ----------------------------------------------------------------------------------- */
 
-.shu-navbar {
-  background-color: var(--nav-background-color);
-  font-family: var(--font-cinzel);
+.nav-bar {
+  background-color: #0f0e0e;
   position: sticky;
-  top: 16px; /* Adds space from very top of viewport */
+  top: 0;
   z-index: 100;
-  /* Fully rounded corners — all four */
   border-radius: 14px;
-  /* Soft, magical shadow */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
-  /* Push body content down generously */
-  margin: 0 auto 48px auto;
+  margin: 16px auto 48px auto;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nav-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 66px;
 }
 
-.nav-home {
-  color: var(--brand-gold);
-  font-size: 1.45rem;
+.nav-title a {
+  padding: 8px;
+  color: #b39c4d;
   text-decoration: none;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 
 .nav-list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  gap: 20px;
   margin: 0;
   padding: 0;
-  gap: 1.6rem;
 }
 
 .nav-list a {
-  color: var(--nav-text-color);
+  padding: 8px;
+  color: #b39c4d;
   text-decoration: none;
   font-size: 1.125rem;
-  padding: 0.4rem 0;
-  position: relative;
-  transition: color 0.25s ease;
+}
+.nav-list a:hover {
+  text-decoration: underline;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
-  color: var(--brand-gold);
-}
-
-.nav-list a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background: var(--brand-gold);
-  transition: width 0.3s ease;
-}
-
-.nav-list a:hover::after,
-.nav-list a:focus::after {
-  width: 100%;
-}
-
-.nav-apply {
-  background: transparent;
-  border: 1px solid var(--brand-gold);
-  color: var(--brand-gold) !important;
-  padding: 0.4rem 1.1rem !important;
-  border-radius: 6px;
-  margin-left: 1.3rem;
-  font-family: var(--font-cinzel);
-  font-size: 1.05rem !important;
-  transition: all 0.25s;
-}
-
-.nav-apply:hover {
-  background: rgba(179, 156, 77, 0.15);
-}
-
-/* Mobile toggle */
-.nav-toggle {
+.nav-hambuger {
   display: none;
-  flex-direction: column;
+  font-size: 30px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
-  width: 32px;
-  height: 24px;
-  justify-content: space-between;
-}
-
-.nav-toggle span {
-  display: block;
-  height: 2.5px;
-  width: 100%;
-  background-color: var(--nav-text-color);
-  border-radius: 2px;
-  transition: 0.3s;
+  color: white;
 }
 
 @media (max-width: 768px) {
-  .shu-navbar {
-    top: 12px;
-    margin: 0 16px 48px 16px;
-    border-radius: 16px;
+  .nav-hambuger {
+    display: block;
+    margin-right: 20px;
   }
 
-  .nav-wrapper {
-    padding: 0 1.2rem;
-    height: 60px;
-  }
-
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-list {
+  #nav-links {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--nav-background-color);
+    background-color: #0f0e0e;
     flex-direction: column;
     padding: 1.8rem;
     gap: 1.4rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
     display: none;
-    /* Fully rounded on mobile too */
-    border-radius: 0 0 16px 16px;
+    border-radius: 16px;
     margin-top: 8px;
   }
 
-  .nav-list.active {
+  #nav-links.active {
     display: flex;
-  }
-
-  .nav-apply {
-    margin-left: 0;
-    align-self: flex-start;
-    margin-top: 0.6rem;
-  }
-
-  /* Hamburger to X */
-  .nav-toggle[aria-expanded="true"] span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-  }
-  .nav-toggle[aria-expanded="true"] span:nth-child(2) {
-    opacity: 0;
-  }
-  .nav-toggle[aria-expanded="true"] span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
   }
 }
