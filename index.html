@@ -8,19 +8,13 @@
   </head>
   <body>
     <header>
-      <nav
-        class="shu-navbar"
-        aria-label="Southern Hogwarts University navigation"
-      >
-        <div class="nav-wrapper">
-          <a href="index.html" class="nav-home">Southern Hogwarts University</a>
-          <button
-            class="nav-toggle"
-            aria-expanded="false"
-            aria-controls="nav-links"
-          >
-            <span></span><span></span><span></span>
-          </button>
+      <header>
+      <nav class="nav-bar">
+        <div class="nav-title">
+          <a href="/CSCY2000-Final/index.html">Southern Hogwarts University</a>
+        </div>
+
+        <div>
           <ul id="nav-links" class="nav-list">
             <li><a href="/CSCY2000-Final/deans.html">Deans</a></li>
             <li>
@@ -30,36 +24,21 @@
             <li>
               <a href="/CSCY2000-Final/student_life.html">Student Life</a>
             </li>
-            <li>
-              <a href="/CSCY2000-Final/areas_of_study.html" class="nav-apply"
-                >Apply</a
-              >
-            </li>
           </ul>
         </div>
+        <button class="nav-hambuger">☰</button>
       </nav>
+
       <script>
         document.addEventListener("DOMContentLoaded", () => {
-          const toggle = document.querySelector(".nav-toggle");
+          const toggle = document.querySelector(".nav-hambuger");
           const nav = document.getElementById("nav-links");
 
           toggle.addEventListener("click", (e) => {
             e.stopPropagation();
-            const isExpanded = toggle.getAttribute("aria-expanded") === "true";
-            toggle.setAttribute("aria-expanded", !isExpanded);
             nav.classList.toggle("active");
           });
-
-          // Close when clicking outside
-          document.addEventListener("click", (e) => {
-            if (
-              !e.target.closest(".shu-navbar") &&
-              nav.classList.contains("active")
-            ) {
-              nav.classList.remove("active");
-              toggle.setAttribute("aria-expanded", "false");
-            }
-          });
+          nav.addEventListener("click", (e) => e.stopPropagation());
         });
       </script>
     </header>

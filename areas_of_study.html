@@ -150,32 +150,37 @@
     <header>
       <nav class="nav-bar">
         <div class="nav-title">
-          <a href="">Southern Hogwarts University</a>
+          <a href="/CSCY2000-Final/index.html">Southern Hogwarts University</a>
         </div>
 
         <div>
           <ul id="nav-links" class="nav-list">
-            <li><a href="">Deans</a></li>
-            <li><a href="">Areas of Study</a></li>
-            <li><a href="">Sports</a></li>
-            <li><a href="">Student Life</a></li>
+            <li><a href="/CSCY2000-Final/deans.html">Deans</a></li>
+            <li>
+              <a href="/CSCY2000-Final/areas_of_study.html">Areas of Study</a>
+            </li>
+            <li><a href="/CSCY2000-Final/sports.html">Sports</a></li>
+            <li>
+              <a href="/CSCY2000-Final/student_life.html">Student Life</a>
+            </li>
           </ul>
         </div>
         <button class="nav-hambuger">☰</button>
       </nav>
-    </header>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const toggle = document.querySelector(".nav-hambuger");
-        const nav = document.getElementById("nav-links");
 
-        toggle.addEventListener("click", (e) => {
-          e.stopPropagation();
-          nav.classList.toggle("active");
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.querySelector(".nav-hambuger");
+          const nav = document.getElementById("nav-links");
+
+          toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            nav.classList.toggle("active");
+          });
+          nav.addEventListener("click", (e) => e.stopPropagation());
         });
-        nav.addEventListener("click", (e) => e.stopPropagation());
-      });
-    </script>
+      </script>
+    </header>
 
     <main>
       <section class="frame">
@@ -315,7 +320,5 @@
         </div>
       </section>
     </main>
-
-    <footer></footer>
   </body>
 </html>
