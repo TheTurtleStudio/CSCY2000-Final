@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Areas of Study</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f5e8d0;
+        color: #3a2a1a;
+        padding: 20px;
+      }
+
+      /* Study Section */
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .frame {
+        background-color: white;
+        border: 3px solid #6b4a3a;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 20px 0;
+      }
+
+      .headding {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+      }
+
+      .headding p {
+        margin-top: 5px;
+        font-style: italic;
+      }
+
+      .pathway-card-holder {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .pathway-card {
+        background-color: white;
+        border: 2px solid #8b6b4d;
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      .symbol {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 3.5rem;
+      }
+
+      .pathway-card h2 {
+        color: #6b4a3a;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 15px 0;
+      }
+
+      .pathway-card p {
+        font-style: italic;
+        text-align: justify;
+        padding: 8px 0;
+      }
+
+      .pathway-req {
+        margin-top: 15px;
+        padding: 12px;
+        background-color: #f9f5ed;
+        border-left: 5px solid #d4af37;
+        border-radius: 4px;
+      }
+
+      .pathway-req h4 {
+        color: #6b4a3a;
+        margin-top: 0;
+      }
+
+      .pathway-req li {
+        margin-left: 10px;
+        padding: 3px;
+      }
+
+      /* Form Section */
+
+      .application {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fdfdfd;
+        border: 1px solid #6b4a3a;
+        border-radius: 6px;
+      }
+
+      .application-card {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .application-card label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .application-card input,
+      .application-card select,
+      .application-card textarea {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #8b6b4d;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      .application-btn {
+        background-color: #6b4a3a;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      .quote {
+        text-align: center;
+        font-style: italic;
+        color: #0f0e0e;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-title">
+          <a href="/CSCY2000-Final/index.html">Southern Hogwarts University</a>
+        </div>
+
+        <div>
+          <ul id="nav-links" class="nav-list">
+            <li><a href="/CSCY2000-Final/deans.html">Deans</a></li>
+            <li>
+              <a href="/CSCY2000-Final/areas_of_study.html">Areas of Study</a>
+            </li>
+            <li><a href="/CSCY2000-Final/sports.html">Sports</a></li>
+            <li>
+              <a href="/CSCY2000-Final/student_life.html">Student Life</a>
+            </li>
+          </ul>
+        </div>
+        <button class="nav-hambuger">☰</button>
+      </nav>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.querySelector(".nav-hambuger");
+          const nav = document.getElementById("nav-links");
+
+          toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            nav.classList.toggle("active");
+          });
+          nav.addEventListener("click", (e) => e.stopPropagation());
+        });
+      </script>
+    </header>
+
+    <main>
+      <section class="frame">
+        <div class="headding">
+          <h1>Areas of Study</h1>
+          <p>Choose your magical path at Southern Hogwarts University.</p>
+        </div>
+
+        <div class="pathway-card-holder">
+          <!-- Ghoul Studies -->
+          <section class="pathway-card">
+            <p class="symbol">👻</p>
+            <h2>Ghoul Studies</h2>
+            <p>
+              Learn to interact with spirits, ghosts, and other spectral beings.
+              Protective wards, ghost etiquette, and ethical conjuring are all
+              part of the curriculum. A favorite among those who like late-night
+              library visits.
+            </p>
+            <div class="pathway-req">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Strong constitution and mental fortitude</li>
+                <li>Open-minded and curious about the afterlife</li>
+                <li>Basic Magical Theory completed</li>
+                <li>Need a Recommendation from a practicing spirit medium</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Water Magic -->
+          <section class="pathway-card">
+            <p class="symbol">💧</p>
+            <h2>Water Magic</h2>
+            <p>
+              Manipulate water in all its forms, streams, rain, or a flood.
+              Emphasising healing Waters and aquatic creatures.
+            </p>
+            <div class="pathway-req">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Affinity for water and emotions</li>
+                <li>Elemental Foundations completed</li>
+                <li>Basic Understanding of marine life</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Thunder and Lightning -->
+          <section class="pathway-card">
+            <p class="symbol">⚡</p>
+            <h2>Thunder and Lightning</h2>
+            <p>
+              Command the raw furry of storms. Students will learn to summon
+              lightning, understand storm patterns, and practice energy
+              controll.
+            </p>
+            <div class="pathway-req">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Highly magical sensitivity</li>
+                <li>Advanced Energy Theory completed</li>
+                <li>Quick Reflexes and stamina</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Arcane Studies -->
+          <section class="pathway-card">
+            <p class="symbol">🔮</p>
+            <h2>Arcane Studies</h2>
+            <p>
+              Dive deep into the forces of magic. Learn to create your own
+              spells, study ancient tomes, and get lost in the library.
+              Challenging but prestigious.
+            </p>
+            <div class="pathway-req">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Exceptional magical aptitude</li>
+                <li>All core subjects completed with exilence</li>
+                <li>Proficiency in multiple magical disiplines</li>
+                <li>Approval from Dean of Arcane Studies</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="frame">
+        <div class="headding">
+          <h2>Apply to Southern Hogwarts University</h2>
+          <p>
+            Take your first steps toward magical greatness by submitting your
+            application.
+          </p>
+        </div>
+        <div class="application">
+          <form>
+            <div class="application-card">
+              <label> Full Name: </label>
+              <input type="text" placeholder="Enter your full name" />
+            </div>
+            <div class="application-card">
+              <label> Email Address: </label>
+              <input type="email" placeholder="Enter your email address" />
+            </div>
+            <div class="application-card">
+              <label> Age </label>
+              <input type="number" placeholder="Enter your age" />
+            </div>
+            <div class="application-card">
+              <label> Area of Study: </label>
+              <select>
+                <option>Select your Preferred area of study</option>
+                <option>Ghoul Studies</option>
+                <option>Water Magic</option>
+                <option>Thunder and Lightning</option>
+                <option>Arcane Studies</option>
+              </select>
+            </div>
+            <div class="application-card">
+              <label> Reason for Attending:</label>
+              <textarea
+                rows="4"
+                placeholder="Why do you wish to study at Southern Hogwarts University?"
+              ></textarea>
+            </div>
+            <button class="application-btn">Submit Application</button>
+          </form>
+        </div>
+      </section>
+      <section class="frame">
+        <div class="quote">
+          "At Southern Hogwarts University, we believe that every student has
+          the protential to achieve magical greateness throught dedication,
+          discipline, and proper guidance."
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
