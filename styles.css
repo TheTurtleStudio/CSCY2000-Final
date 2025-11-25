@@ -42,8 +42,7 @@
 body {
     background-color: var(--background-color-1) !important;
     color: var(--primary-text-color) !important;
-    margin: 0;
-    padding: 0;
+    font-family: var(--font-cormorant);
 }
 
 footer {
@@ -152,6 +151,7 @@ footer a:hover {
 }
 
 }
+
 /* Styles for deans.html */
 .dean-container {
     padding: 0 2em;
@@ -256,5 +256,66 @@ footer a:hover {
 @media screen and (max-width: 769px) {
     .mobile {
         grid-template-columns: auto;
+    }
+}
+
+/* Styling for Brayden portfolio */
+.braydenport-header {
+    font-family: var(--font-cinzel);
+    color: var(--header-color);
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.braydenport-subheader {
+    font-family: var(--font-cinzel);
+    color: var(--subheader-color);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.braydenport-container {
+    padding: 2em;
+}
+
+.braydenport-section {
+    margin-bottom: 2em;
+    clear: both;
+    padding-top: 2em;
+}
+
+/* Don't add any extra padding to the first section, it messed up consistency between my deans and portfolio pages */
+.braydenport-section:first-of-type {
+    padding-top: 0;
+}
+
+.braydenport-photo {
+    width: 300px;
+    object-fit: cover;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 4px solid var(--highlight-gold-color);
+    box-shadow: var(--highlight-red-color) 0px 5px 10px;
+    float: left;
+    margin-right: 2em;
+}
+
+.braydenport-bio {
+    font-size: 1.25em;
+    color: var(--primary-text-color);
+    font-family: var(--font-cormorant);
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* Media query for brayden portfolio for mobile devices */
+@media screen and (max-width: 769px) {
+    .braydenport-photo {    
+        float: none;
+        display: block;
+        width: 50%;
+        margin: 0 auto 2em auto;
     }
 }

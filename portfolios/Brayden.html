@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Brayden Peterson</title>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Southern Hogwarts University: Brayden Peterson</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Use bootstrap nav classes and stop displaying burger when screen is at large breakpoint -->
+    <nav class="navbar navbar-expand-md shu-navbar">
+        <a class="navbar-brand shu-brand" href="../index.html">
+            <img src="../images/logo.png" alt="Southern Hogwarts University" class="shu-nav-logo">
+        </a>
 
+        <!-- Hamburger icon from bootstrap -->
+        <button class="navbar-toggler navbar-dark shu-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#shu-navbar-content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="shu-navbar-content">
+            <ul class="navbar-nav shu-nav-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../deans.html">Deans List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../student_life.html">Student Life</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1 class="braydenport-header">Brayden Peterson</h2>
+        <h3 class="braydenport-subheader">Dean of Ghoul Studies</h3>
+    </header>
+    <main class="braydenport-container">
+        <section class="braydenport-section">
+            <img class="braydenport-photo" src="../images/brayden.jpg" alt="Photo of Brayden Peterson">
+            <div class="braydenport-bio">
+                <h2>Dr. Brayden Peterson</h2>
+                <p>Dr. Brayden Peterson has been the Dean of Ghoul Studies since 2019, earning his PhD in Necromancy from the famous Hogwarts School of Witchcraft and Wizardry. With his vast knowledge of necromancy, Dr. Peterson has worked tirelessly since to advance magical techniques in order to innovate the magical world and separate us further from the extreme ordinary of the muggles.</p>
+        </section>
+        <section class="braydenport-section">
+            <div>
+                <h2>Course Overviews</h2>
+                <dl>
+                    <dt>GS-1010: Introduction to Ghoul Studies</dt>
+                    <dd>An introduction course to the studies of ghouls and necromancy covering the biology, behavior, and role of ghouls in the magical ecosystem.</dd>
+
+                    <dt>GS-1020: Ghoul History</dt>
+                    <dd>This course deeply explores the history and background of how the will of ghouls came to be harnessed and the power of the undead has been progressively improving with the advances in magical techniques.</dd>
+
+                    <dt>Advanced Ghoul Research Methods</dt>
+                    <dd>A practical course focusing on field research techniques, data collection, and analysis specific to ghoul populations.</dd>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid mobile-footer">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="../index.html" class="footer-link">Home</a>
+                <a href="../deans.html" class="footer-link">Deans List</a>
+                <a href="../sports.html" class="footer-link">Sports</a>
+                <a href="../student_life.html" class="footer-link">Student Life</a>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="NEEDS_IMPLEMENTED" class="footer-link">Apply</a>
+                <a href="../areas_of_study.html" class="footer-link">Study Pathways</a>
+            </div>
+            <div class="footer-section">
+                <h3>Faculty / Staff</h3>
+                <a href="Brayden.html" class="footer-link">Dr. Brayden Peterson</a>
+                <a href="Lanjen.html" class="footer-link">Dr. Lanjen Hsieh</a>
+                <a href="May.html" class="footer-link">Dr. May Miura</a>
+                <a href="Riley.html" class="footer-link">Dr. Riley McCurdy</a>
+            </div>
+            <div class="footer-section">
+                <img src="../images/logo.png" alt="Souther Hogwarts University Logo" class="footer-logo">
+                <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
+                <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
+            </div>
+        </div>
+        <p class="footer-page-credit">Portfolio created by <a href="portfolios/Brayden.html">Brayden Peterson</a></p>
+    </footer>
 </body>
 </html>
