@@ -1,12 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Southern Hogwarts University: Sports</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!-- Use bootstrap nav classes and stop displaying burger when screen is at large breakpoint -->
+    <nav class="navbar navbar-expand-md shu-navbar sticky-top">
+        <a class="navbar-brand shu-brand" href="index.html">
+            <img src="images/logo.png" alt="Southern Hogwarts University" class="shu-nav-logo">
+        </a>
+
+        <!-- Hamburger icon from bootstrap -->
+        <button class="navbar-toggler navbar-dark shu-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#shu-navbar-content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="shu-navbar-content">
+            <ul class="navbar-nav shu-nav-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deans.html">Deans List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student_life.html">Student Life</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="areas_of_study.html">Study Pathways</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="footer-grid mobile-footer">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="deans.html" class="footer-link">Deans List</a>
+                <a href="sports.html" class="footer-link">Sports</a>
+                <a href="student_life.html" class="footer-link">Student Life</a>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="areas_of_study.html#applicationForm" class="footer-link">Apply</a>
+                <a href="areas_of_study.html" class="footer-link">Study Pathways</a>
+            </div>
+            <div class="footer-section">
+                <h3>Faculty / Staff</h3>
+                <a href="portfolios/Brayden.html" class="footer-link">Dr. Brayden Peterson</a>
+                <a href="portfolios/Lanjen.html" class="footer-link">Dr. Lanjen Hsieh</a>
+                <a href="portfolios/May.html" class="footer-link">Dr. May Miura</a>
+                <a href="portfolios/Riley.html" class="footer-link">Dr. Riley McCurdy</a>
+            </div>
+            <div class="footer-section">
+                <img src="images/logo.png" alt="Souther Hogwarts University Logo" class="footer-logo">
+                <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
+                <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
+            </div>
+        </div>
+        <p class="footer-page-credit">Sports page created by <a href="portfolios/May.html">May Miura</a></p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
