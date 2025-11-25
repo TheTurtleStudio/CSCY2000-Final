@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Deans</title>
+    <title>Southern Hogwarts University: Deans</title>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Use bootstrap nav classes and stop displaying burger when screen is at large breakpoint -->
+    <nav class="navbar navbar-expand-md shu-navbar">
+        <a class="navbar-brand shu-brand" href="index.html">
+            <img src="images/logo.png" alt="Southern Hogwarts University" class="shu-nav-logo">
+        </a>
+
+        <!-- Hamburger icon from bootstrap -->
+        <button class="navbar-toggler navbar-dark shu-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#shu-navbar-content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="shu-navbar-content">
+            <ul class="navbar-nav shu-nav-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deans.html">Deans List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student_life.html">Student Life</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <h1 class="dean-page-heading">Current Deans</h2>
     </header>
@@ -48,7 +80,7 @@
                 <li>
                     <a class="dean-link" href="portfolios/Brayden.html">
                         <div class="dean-card">
-                            <img class="dean-photo" src="images/defaultDean.jpg" alt="Photo of Brayden Peterson">
+                            <img class="dean-photo" src="images/brayden-hogwarts.jpg" alt="Photo of Brayden Peterson">
                             <div class="dean-info">
                                 <h3 class="dean-name">Dr. Brayden Peterson</h3>
                                 <p class="dean-description">Dean of Ghoul Studies</p>
@@ -100,5 +132,8 @@
         </div>
         <p class="footer-page-credit">Deans page created by <a href="portfolios/Brayden.html">Brayden Peterson</a></p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
