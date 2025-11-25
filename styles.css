@@ -265,7 +265,7 @@ footer a:hover {
     color: var(--header-color);
     font-size: 3.5em;
     text-align: center;
-    margin-bottom: 0.25em;
+    margin: 0 0.5em 0.25em 0.5em;
 }
 
 .braydenport-subheader {
@@ -273,17 +273,20 @@ footer a:hover {
     color: var(--subheader-color);
     font-size: 2em;
     text-align: center;
-    margin-bottom: 0.25em;
+    margin: 0 0.5em 0.25em 0.5em;
 }
 
 .braydenport-container {
     padding: 2em;
+    padding-bottom: 0;
 }
 
 .braydenport-section {
     margin-bottom: 2em;
     clear: both;
     padding-top: 2em;
+    color: var(--primary-text-color);
+    font-family: var(--font-cormorant);
 }
 
 /* Don't add any extra padding to the first section, it messed up consistency between my deans and portfolio pages */
@@ -291,7 +294,7 @@ footer a:hover {
     padding-top: 0;
 }
 
-.braydenport-photo {
+.braydenport-photo-background {
     width: 300px;
     object-fit: cover;
     border-top-left-radius: 50%;
@@ -301,13 +304,42 @@ footer a:hover {
     float: left;
     margin-right: 2em;
 }
+.braydenport-photo {
+    width: 300px;
+    object-fit: cover;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 4px solid var(--highlight-gold-color);
+    box-shadow: var(--highlight-red-color) 0px 5px 10px;
+    float: left;
+    margin-right: 2em;
+    position: absolute;
+    left: 2em;
+    animation: braydenport-magic-portrait 6s linear infinite alternate;
+}
 
 .braydenport-bio {
     font-size: 1.25em;
-    color: var(--primary-text-color);
-    font-family: var(--font-cormorant);
-    font-weight: bold;
     text-align: justify;
+}
+
+.braydenport-courses dt {
+    margin-top: 1em;
+}
+
+.braydenport-courses dd {
+    font-size: 1.25em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+}
+
+@keyframes braydenport-magic-portrait {
+    0%, 60% {
+        opacity: 1;
+    }
+    75%, 100% {
+        opacity: 0;
+    }
 }
 
 /* Media query for brayden portfolio for mobile devices */
@@ -317,5 +349,16 @@ footer a:hover {
         display: block;
         width: 50%;
         margin: 0 auto 2em auto;
+        left: auto;
+        position: relative;
+    }
+    /* Had to do some yucky calculations to get background photo aligned with front photo on mobile*/
+    .braydenport-photo-background {    
+        float: none;
+        display: block;
+        width: calc(50% - 2em);
+        left: calc(25% + 1em);
+        margin: 0 auto 2em auto;
+        position: absolute;
     }
 }
