@@ -6,63 +6,63 @@
         color: var(--primary-text-color);
     */
 
-    /* Backgrounds and Text Colors */
-    --background-color-1: #e9e4d4;
-    --background-color-2: #d6d1c4;
-    --background-color-3: #c5bfaf;
-    --footer-color: #0f0e0e;
-    --footer-link-color: #b39c4d;
-    --footer-link-hover-color: #6c2d2c;
-    --footer-text-color: #e9e4d4;
-    --header-color: #1b1a17;
-    --subheader-color: #2e2b28;
-    --primary-text-color: #3c3b37;
-    --secondary-text-color: #6c6a63;
-    --nav-background-color: #0f0e0e;
-    --nav-text-color: #b39c4d;
-    --nav-hover-color: #6c2d2c;
+  /* Backgrounds and Text Colors */
+  --background-color-1: #e9e4d4;
+  --background-color-2: #d6d1c4;
+  --background-color-3: #c5bfaf;
+  --footer-color: #0f0e0e;
+  --footer-link-color: #b39c4d;
+  --footer-link-hover-color: #6c2d2c;
+  --footer-text-color: #e9e4d4;
+  --header-color: #1b1a17;
+  --subheader-color: #2e2b28;
+  --primary-text-color: #3c3b37;
+  --secondary-text-color: #6c6a63;
+  --nav-background-color: #0f0e0e;
+  --nav-text-color: #b39c4d;
+  --nav-hover-color: #6c2d2c;
 
-    /* Various Accents */
-    --highlight-gold-color: #b39c4d;
-    --highlight-red-color: #6c2d2c;
-    --highlight-navy-color: #1a2238;
-    --highlight-mossy-color: #7a7f5c;
+  /* Various Accents */
+  --highlight-gold-color: #b39c4d;
+  --highlight-red-color: #6c2d2c;
+  --highlight-navy-color: #1a2238;
+  --highlight-mossy-color: #7a7f5c;
 
-    /* Brand Colors */
-    --brand-black: #0f0e0e;
-    --brand-gold: #b39c4d;
-    --brand-red: #4f2c2c;
+  /* Brand Colors */
+  --brand-black: #0f0e0e;
+  --brand-gold: #b39c4d;
+  --brand-red: #4f2c2c;
 
-    /* Font Families */
-    --font-cormorant: "Cormorant Garamond", serif;
-    --font-cinzel: "Cinzel", serif;
+  /* Font Families */
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-cinzel: "Cinzel", serif;
 }
 
 /* General Styles */
 body {
-    background-color: var(--background-color-1) !important;
-    color: var(--primary-text-color) !important;
-    font-family: var(--font-cormorant);
+  background-color: var(--background-color-1) !important;
+  color: var(--primary-text-color) !important;
+  font-family: var(--font-cormorant);
 }
 
 footer {
-    font-family: var(--font-cormorant);
-    font-size: 1.125em;
-    color: var(--footer-text-color);
-    background-color: var(--footer-color);
-    text-align: center;
-    margin-top: 2em;
-    padding: 1em 0;
+  font-family: var(--font-cormorant);
+  font-size: 1.125em;
+  color: var(--footer-text-color);
+  background-color: var(--footer-color);
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 0;
 }
 
 footer a {
-    color: var(--footer-link-color);
-    text-decoration: none;
+  color: var(--footer-link-color);
+  text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--footer-link-hover-color);
-    text-decoration: none;
+  color: var(--footer-link-hover-color);
+  text-decoration: none;
 }
 
 .footer-grid {
@@ -84,18 +84,18 @@ footer a:hover {
 }
 
 .footer-logo {
-    object-fit: contain;
-    width: 50%;
-    animation: alternate-reverse footer-logo-float 4s ease-in-out infinite;
+  object-fit: contain;
+  width: 50%;
+  animation: alternate-reverse footer-logo-float 4s ease-in-out infinite;
 }
 
 @keyframes footer-logo-float {
-    from {
-        transform: translateY(0px);
-    }
-    to {
-        transform: translateY(-10px);
-    }
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 .footer-page-credit {
@@ -104,52 +104,55 @@ footer a:hover {
 }
 
 .navbar a {
-    color: var(--nav-text-color);
-    font-family: var(--font-cormorant);
-    font-size: 1.25em;
+  color: var(--nav-text-color);
+  font-family: var(--font-cormorant);
+  font-size: 1.25em;
 }
 
 .navbar a:hover {
-    color: var(--nav-hover-color);
+  color: var(--nav-hover-color);
 }
 
 .shu-navbar {
-    background-color: var(--nav-background-color);
-    margin-bottom: 2em;
+  background-color: var(--nav-background-color);
+  margin-bottom: 2em;
 }
 
 .shu-nav-logo {
-    height: 4em;
-    margin: 0 1em;
+  height: 4em;
+  margin: 0 1em;
 }
 
 .shu-hamburger {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 @media screen and (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: auto;
-        text-align: center;
-    }
+  .footer-grid {
+    grid-template-columns: auto;
+    text-align: center;
+  }
 
-    .footer-logo {
-        width: 40%;
-        margin-top: 3em;
-    }
-    
-    .footer-page-credit {
-        margin-top: 3em;
-    }
+  .footer-logo {
+    width: 40%;
+    margin-top: 3em;
+  }
 
-    .navbar {
-        position: relative
-    }
+  .footer-page-credit {
+    margin-top: 3em;
+  }
 
-    .shu-nav-links {
+  .navbar {
+    position: relative;
+  }
+
+  .shu-nav-links {
     margin: 0 1em;
-}
+  }
 
+  .nav-link {
+    text-align: center;
+  }
 }
 
 /* Styles for deans.html */
@@ -254,111 +257,113 @@ footer a:hover {
 
 /* Media query for deans page for mobile devices */
 @media screen and (max-width: 769px) {
-    .mobile {
-        grid-template-columns: auto;
-    }
+  .mobile {
+    grid-template-columns: auto;
+  }
 }
 
 /* Styling for Brayden portfolio */
 .braydenport-header {
-    font-family: var(--font-cinzel);
-    color: var(--header-color);
-    font-size: 3.5em;
-    text-align: center;
-    margin: 0 0.5em 0.25em 0.5em;
+  font-family: var(--font-cinzel);
+  color: var(--header-color);
+  font-size: 3.5em;
+  text-align: center;
+  margin: 0 0.5em 0.25em 0.5em;
 }
 
 .braydenport-subheader {
-    font-family: var(--font-cinzel);
-    color: var(--subheader-color);
-    font-size: 2em;
-    text-align: center;
-    margin: 0 0.5em 0.25em 0.5em;
+  font-family: var(--font-cinzel);
+  color: var(--subheader-color);
+  font-size: 2em;
+  text-align: center;
+  margin: 0 0.5em 0.25em 0.5em;
 }
 
 .braydenport-container {
-    padding: 2em;
-    padding-bottom: 0;
+  padding: 2em;
+  padding-bottom: 0;
 }
 
 .braydenport-section {
-    margin-bottom: 2em;
-    clear: both;
-    padding-top: 2em;
-    color: var(--primary-text-color);
-    font-family: var(--font-cormorant);
+  margin-bottom: 2em;
+  clear: both;
+  padding-top: 2em;
+  color: var(--primary-text-color);
+  font-family: var(--font-cormorant);
 }
 
 /* Don't add any extra padding to the first section, it messed up consistency between my deans and portfolio pages */
 .braydenport-section:first-of-type {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .braydenport-photo-background {
-    width: 300px;
-    object-fit: cover;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border: 4px solid var(--highlight-gold-color);
-    box-shadow: var(--highlight-red-color) 0px 5px 10px;
-    float: left;
-    margin-right: 2em;
+  width: 300px;
+  object-fit: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 4px solid var(--highlight-gold-color);
+  box-shadow: var(--highlight-red-color) 0px 5px 10px;
+  float: left;
+  margin-right: 2em;
 }
 .braydenport-photo {
-    width: 300px;
-    object-fit: cover;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border: 4px solid var(--highlight-gold-color);
-    box-shadow: var(--highlight-red-color) 0px 5px 10px;
-    float: left;
-    margin-right: 2em;
-    position: absolute;
-    left: 2em;
-    animation: braydenport-magic-portrait 6s linear infinite alternate;
+  width: 300px;
+  object-fit: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 4px solid var(--highlight-gold-color);
+  box-shadow: var(--highlight-red-color) 0px 5px 10px;
+  float: left;
+  margin-right: 2em;
+  position: absolute;
+  left: 2em;
+  animation: braydenport-magic-portrait 6s linear infinite alternate;
 }
 
 .braydenport-bio {
-    font-size: 1.25em;
-    text-align: justify;
+  font-size: 1.25em;
+  text-align: justify;
 }
 
 .braydenport-courses dt {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .braydenport-courses dd {
-    font-size: 1.25em;
-    margin-left: 3em;
-    margin-bottom: 1em;
+  font-size: 1.25em;
+  margin-left: 3em;
+  margin-bottom: 1em;
 }
 
 @keyframes braydenport-magic-portrait {
-    0%, 60% {
-        opacity: 1;
-    }
-    75%, 100% {
-        opacity: 0;
-    }
+  0%,
+  60% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Media query for brayden portfolio for mobile devices */
 @media screen and (max-width: 769px) {
-    .braydenport-photo {    
-        float: none;
-        display: block;
-        width: 50%;
-        margin: 0 auto 2em auto;
-        left: auto;
-        position: relative;
-    }
-    /* Had to do some yucky calculations to get background photo aligned with front photo on mobile*/
-    .braydenport-photo-background {    
-        float: none;
-        display: block;
-        width: calc(50% - 2em);
-        left: calc(25% + 1em);
-        margin: 0 auto 2em auto;
-        position: absolute;
-    }
+  .braydenport-photo {
+    float: none;
+    display: block;
+    width: 50%;
+    margin: 0 auto 2em auto;
+    left: auto;
+    position: relative;
+  }
+  /* Had to do some yucky calculations to get background photo aligned with front photo on mobile*/
+  .braydenport-photo-background {
+    float: none;
+    display: block;
+    width: calc(50% - 2em);
+    left: calc(25% + 1em);
+    margin: 0 auto 2em auto;
+    position: absolute;
+  }
 }
