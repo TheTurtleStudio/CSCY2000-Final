@@ -123,6 +123,9 @@ footer a:hover {
 .shu-nav-logo {
   height: 4em;
   margin: 0 1em;
+  width: 4em;
+  aspect-ratio: 1;
+  max-width: 4em;
 }
 
 .shu-hamburger {
