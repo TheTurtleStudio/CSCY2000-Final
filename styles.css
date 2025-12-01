@@ -162,6 +162,29 @@ footer a:hover {
   }
 }
 
+/* Styles for index.html */
+.homepage-hero {
+  text-align: center;
+  align-content: center;
+  background-image: url("images/homeHero.png");
+  background-position: center center;
+  width: 90%;
+  height: 50vh;
+  margin: 0 2em;
+  background-size: cover;
+}
+
+.homepage-hero h1 {
+  font-family: var(--font-cinzel);
+  color: var(--highlight-gold-color);
+  text-shadow: var(--highlight-red-color) 0 2px 5px;
+  font-size: 4em;
+  vertical-align: middle;
+  width: 100%;
+  margin: auto 0;
+}
+
+
 /* Styles for deans.html */
 .dean-container {
   padding: 0 2em;
