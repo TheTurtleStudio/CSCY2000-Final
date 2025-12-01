@@ -496,3 +496,260 @@ img {
     width: 300px;
   }
 }
+
+/* Style rules for student_life.html */
+
+h1 {
+    font-family: var(--font-cinzel);
+}
+
+/* Style rules for student_life.html's each section */
+
+.life-section {
+    background-color: var(--background-color-2);
+    border: 1px solid var(--highlight-gold-color);
+    margin: 25px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.life-section h2 {
+    color: var(--brand-gold);
+    font-family: var(--font-cinzel);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.life-section p {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Style rules for student clubs and activities */
+
+.club-categories, .activities-event {
+    background-color: var(--background-color-3);
+    border: 1px solid var(--highlight-gold-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.club-categories {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+}
+
+.club-categories h3, .event-title, .activities-event {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.club-categories h3, .event-title {
+    font-family: var(--font-cinzel);
+}
+
+/* Style rules for student clubs list */
+
+.club-categories h3 {
+    background-color: var(--background-color-2);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.club-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.club-categories ul li {
+    color: var(--primary-text-color);
+    text-align: center;
+    margin: 5px;
+    font-size: 1em;
+}
+
+/* Style rules for Hogwarts activities */
+
+.activities-event {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 200;
+}
+
+.event-describe {
+    color: var(--secondary-text-color);
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Description for Hogwarts activitie on hover */
+
+.activities-event:hover {
+    background-color: var(--background-color-2);
+}
+
+.activities-event:hover .event-describe {
+    display: block;
+}
+
+/* Style rules for Dining Hall section with Tablet only */
+
+#Tablet-desktop {
+    margin-top: 20px;
+    display: none;
+}
+
+#Tablet-desktop table {
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 100%;
+}
+
+#Tablet-desktop th {
+    background-color: var(--brand-black);
+    color: var(--brand-gold);
+    padding: 10px;
+    text-align: left;
+}
+
+#Tablet-desktop td {
+    border-bottom: 1px solid var(--highlight-gold-color);
+    padding: 10px;
+}
+
+#Tablet-desktop tr {
+    background-color: var(--background-color-3);
+}
+
+/* Media query for LanJen student_life for mobile devices */
+.life-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+}
+
+/* Media query for LanJen student_life for tablet devices */
+@media screen and (min-width: 620px), print {
+
+    .life-grid {
+        grid-template-columns: auto auto;
+        gap: 18px;
+    }
+
+}
+
+/* Media query for LanJen student_life for desktop devices */
+@media screen and (min-width: 1000px), print {
+  
+    .life-grid {
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    #Tablet-desktop {
+        display: block;
+    }
+}
+
+/* LanJen portfolio page */
+
+/* Title section */
+
+.lanjen-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.lanjen-title h1 {
+    color: var(--header-color);
+    font-family: var(--font-cinzel);
+    font-size: 2.5em;
+}
+
+.lanjen-title h2 {
+    color: var(--subheader-color);
+    font-family: var(--font-cinzel);
+    font-size: 1.5em;
+}
+
+.lanjen-tagline {
+    color: var(--secondary-text-color);
+    font-style: italic;
+}
+
+/* Profile section */
+
+.lanjen-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.lanjen-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--highlight-gold-color);
+}
+
+.lanjen-about p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* Style for Philosophy, Achievements, and Courses section */
+
+.lanjen-philosophy, .lanjen-achievements, .lanjen-courses {
+    background-color: var(--background-color-2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 2em auto;
+    max-width: 900px;
+    line-height: 1.5;
+}
+
+/* Style for section h2 */
+
+.lanjen-philosophy h2, .lanjen-achievements h2, .lanjen-courses h2 {
+    color: var(--brand-gold);
+    font-family: var(--font-cinzel);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style for lists */
+
+.lanjen-achievements ul, .lanjen-courses ul {
+    padding-left: 20px;
+}
+
+.lanjen-achievements li, .lanjen-courses li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+/* Style for contact section */
+
+.lanjen-contact {
+    text-align: center;
+    margin: 2em auto;
+    padding: 15px;
+}
+
+.lanjen-contact p {
+    margin-bottom: 5px;
+}
