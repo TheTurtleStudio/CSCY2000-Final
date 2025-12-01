@@ -471,3 +471,25 @@ footer a:hover {
     color: var(--nav-active-color);
   }
 }
+
+/* Styles for sports HTML*/
+img {
+  width: 100%;
+  height: 300px;
+}
+.Quidditch-main {
+  display: none;
+}
+
+/* Sports Media query for tablet*/
+@media screen and (min-width: 600px) {
+  .Quidditch-main {
+    display: block;
+    width: 100%;
+    height: 500px;
+  }
+
+  img {
+    width: 300px;
+  }
+}
