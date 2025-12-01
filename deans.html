@@ -48,18 +48,16 @@
         </div>
     </nav>
     <header>
-        <h1 class="dean-page-heading">Current Deans</h2>
+        <h1 class="dean-page-heading">Deans of SHU</h2>
     </header>
     <main class="dean-container">
         <section>
-            <ul class="dean-list mobile">
+            <ul class="dean-list mobile" id="dean-list">
                 <!-- Dean card for Riley -->
-                <li>
+                <li class="deanlist-item">
                     <a class="dean-link" href="portfolios/Riley.html">
                         <div class="dean-card">
-                            <!-- Negatively delay animation to put it out of sync with others, we do this with the rest to make it look random-->
-                            <img class="dean-photo" style="animation-delay: -0.515s" src="images/defaultDean.jpg" alt="Photo of Riley McCurdy">
-                            <!-- Maybe I style this better, look into later... -->
+                            <img class="dean-photo" src="images/defaultDean.jpg" alt="Photo of Riley McCurdy">
                             <div class="dean-info">
                                 <h3 class="dean-name">Dr. Riley McCurdy</h3>
                                 <p class="dean-description">Dean of Arcane</p>
@@ -68,10 +66,10 @@
                     </a>
                 </li>
                 <!-- Dean card for May -->
-                <li>
+                <li class="deanlist-item">
                     <a class="dean-link" href="portfolios/May.html">
                         <div class="dean-card">
-                            <img class="dean-photo" style="animation-delay: -1.682s" src="images/defaultDean.jpg" alt="Photo of May Miura">
+                            <img class="dean-photo" src="images/defaultDean.jpg" alt="Photo of May Miura">
                             <div class="dean-info">
                                 <h3 class="dean-name">Dr. May Miura</h3>
                                 <p class="dean-description">Dean of Thunder and Light</p>
@@ -80,7 +78,7 @@
                     </a>
                 </li>
                 <!-- Dean card for Brayden -->
-                <li>
+                <li class="deanlist-item">
                     <a class="dean-link" href="portfolios/Brayden.html">
                         <div class="dean-card">
                             <img class="dean-photo" src="images/brayden.jpg" alt="Photo of Brayden Peterson">
@@ -92,10 +90,10 @@
                     </a>
                 </li>
                 <!-- Dean card for Lanjen -->
-                <li>
+                <li class="deanlist-item">
                     <a class="dean-link" href="portfolios/Lanjen.html">
                         <div class="dean-card">
-                            <img class="dean-photo" style="animation-delay: -1.162s" src="images/defaultDean.jpg" alt="Photo of Lanjen Hsieh">
+                            <img class="dean-photo" src="images/defaultDean.jpg" alt="Photo of Lanjen Hsieh">
                             <div class="dean-info">
                                 <h3 class="dean-name">Dr. Lanjen Hsieh</h3>
                                 <p class="dean-description">Dean of Water</p>
@@ -103,7 +101,101 @@
                         </div>
                     </a>
                 </li>
+                <!-- FORMER DEANS FOR JAVASCRIPT REQUIREMENT-->
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Dianne Rott</h3>
+                                <p class="dean-description">Ex-Dean of Arcane</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Izzy Gone</h3>
+                                <p class="dean-description">Ex-Dean of Thunder and Light</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Yule B. Nekst</h3>
+                                <p class="dean-description">Ex-Dean of Ghoul Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Barry Da'Live</h3>
+                                <p class="dean-description">Ex-Dean of Water</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Merle Ambrose</h3>
+                                <p class="dean-description">Ex-Dean of Ravenwood Magic</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Cyrus Drake</h3>
+                                <p class="dean-description">Ex-Dean of Death</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Malistaire Drake</h3>
+                                <p class="dean-description">Ex-Dean of Death</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="deanlist-item">
+                    <a class="dean-link">
+                        <div class="dean-card">
+                            <img class="dean-photo" src="images/gravestone.jpg" alt="Gravestone">
+                            <div class="dean-info">
+                                <h3 class="dean-name">Dr. Velma von Venkman</h3>
+                                <p class="dean-description">Ex-Dean of Shadow</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
             </ul>
+            <div class="deans-dean-pagination" id="deans-paginate">
+                <a href="#" class="deans-pagination-link" data-pageNum="1">1</a>
+                <a href="#" class="deans-pagination-link" data-pageNum="2">2</a>
+                <a href="#" class="deans-pagination-link" data-pageNum="3">3</a>
+            </div>
         </section>
     </main>
     <footer>
@@ -136,7 +228,7 @@
         <p class="footer-page-credit">Deans page created by <a href="portfolios/Brayden.html">Brayden Peterson</a></p>
     </footer>
 
-
+    <script src="javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -204,6 +204,22 @@ footer a:hover {
   grid-template-columns: 50% 50%;
 }
 
+.deans-dean-pagination {
+  text-align: center;
+}
+
+.deans-pagination-link {
+  background-color: var(--footer-color);
+  padding: 0.75em 1em;
+  text-decoration: none;
+  color: var(--footer-link-color);
+}
+
+.deans-pagination-link:hover {
+  background-color: var(--footer-link-hover-color);
+  color: var(--footer-color);
+}
+
 .dean-name {
   font-size: 1.5em;
   font-weight: bold;

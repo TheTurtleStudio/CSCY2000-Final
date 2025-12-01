@@ -22,7 +22,7 @@ X    13.Include a form with different inputs (ie. checkbox, radio, textarea, pas
 
 JavaScript
 
-    1.You need to have at least 2 JavaScript functions associated with your pages on different pages (external javascript file)
+(1/2)    1.You need to have at least 2 JavaScript functions associated with your pages on different pages (external javascript file)
 
 CSS 
 
