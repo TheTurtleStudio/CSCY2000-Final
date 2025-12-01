@@ -121,8 +121,15 @@ footer a:hover {
 }
 
 .shu-nav-logo {
+<<<<<<< Updated upstream
   height: 4em;
   margin: 0 1em;
+=======
+    height: 4em;
+    width: 4em;
+    aspect-ratio: 1;
+    margin: 0 1em;
+>>>>>>> Stashed changes
 }
 
 .shu-hamburger {
