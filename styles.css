@@ -89,6 +89,11 @@ footer a:hover {
   animation: alternate-reverse footer-logo-float 4s ease-in-out infinite;
 }
 
+.footer-socials {
+  width: 1.5em;
+  margin: 0 1.5em 0 1.5em;
+}
+
 @keyframes footer-logo-float {
   from {
     transform: translateY(0px);
@@ -136,6 +141,11 @@ footer a:hover {
   .footer-logo {
     width: 40%;
     margin-top: 3em;
+  }
+
+  .footer-socials {
+    width: 2em;
+    margin: 2em 1.5em 0 1.5em;
   }
 
   .footer-page-credit {
