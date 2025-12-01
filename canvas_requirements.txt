@@ -14,8 +14,8 @@ X    9.Two different list types (unorder, ordered, descriptive)
         Name it <class=mobile>
 (1/2)    10.Use Bootstrap for 2 different elements(ie. Forms, Images) 
     11.Embed a map on one of the pages.
-    12.One page that includes a table, such as numbers from a spreadsheet, price sheet, or a comparison chart. 
-        Name it <id Tablet-desktop>
+X    12.One page that includes a table, such as numbers from a spreadsheet, price sheet, or a comparison chart. 
+X        Name it <id Tablet-desktop>
 X    13.Include a form with different inputs (ie. checkbox, radio, textarea, password, etc.) but it MUST have at least 4 different inputs as well as a SUBMIT button
     14.Use the Grid Layout somewhere on the Home page and use it as appropriate for different viewports.
     15.Add audio or video to your site and make it applicable to your pages, (it should enhance your pages). (10 points EXTRA CREDIT)
