@@ -195,6 +195,9 @@ footer a:hover {
 }
 
 .dean-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
   grid-template-columns: auto;
 }
 
@@ -402,7 +405,7 @@ footer a:hover {
   #Tablet-desktop {
     display: table;
   }
-
+  /* Additional style: Moved background photo for Brayden's portfolio to float next to text */
   .braydenport-photo-background {
     width: 300px;
     float: left;
@@ -410,6 +413,7 @@ footer a:hover {
     position: relative;
     left: 0;
   }
+  /* Additional style: Moved front photo for Brayden's portfolio to accomdate for background photo moving, need to keep effect */
   .braydenport-photo {
     width: 300px;
     border: 4px solid var(--highlight-gold-color);
@@ -417,10 +421,8 @@ footer a:hover {
     position: absolute;
     left: 2em;
   }
+  /* Additional style: Expand grid for deans list for aesthetic */
   .dean-list {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
     grid-template-columns: 50% 50%;
   }
 }

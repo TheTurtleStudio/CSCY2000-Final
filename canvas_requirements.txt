@@ -37,7 +37,7 @@ X    7.Other styles as appropriate to make pages feel complete
 X        Hide Mobile Required (list)
 X        Show Tablet-desktop (table)
         Grid Layout Used
-        2 different styles applied of your choice AND MAKE SURE YOU COMMENT WHAT YOU DID
+X        2 different styles applied of your choice AND MAKE SURE YOU COMMENT WHAT YOU DID
     9.Media Query for Desktop 
 X        Hide Mobile Required (list)
 X        ShowTablet-desktop (table)
