@@ -170,7 +170,7 @@ footer a:hover {
 .homepage-hero {
   text-align: center;
   align-content: center;
-  background-image: url("images/homeHero.png");
+  background-image: url("images/homeHero.jpg");
   background-position: center center;
   width: 100%;
   height: 50vh;
@@ -181,7 +181,9 @@ footer a:hover {
 .homepage-hero h1 {
   font-family: var(--font-cinzel);
   color: var(--highlight-gold-color);
-  text-shadow: var(--highlight-red-color) 0 2px 5px;
+  text-shadow: 
+    0 0 8px var(--brand-black),
+    0 0 12px var(--highlight-red-color);
   font-size: 4em;
   vertical-align: middle;
   width: 100%;
