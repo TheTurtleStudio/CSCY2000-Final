@@ -129,7 +129,11 @@ footer a:hover {
   margin: 0 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .homepage-event-container {
+    display: none;
+  }
+
   .footer-grid {
     grid-template-columns: auto;
     text-align: center;
@@ -183,8 +187,61 @@ footer a:hover {
   width: 100%;
   margin: auto 0;
 }
+
 .homepage-container {
   padding: 2em;
+}
+
+.homepage-container p {
+  font-family: var(--font-cormorant);
+}
+
+.homepage-inlinelogo-p {
+  height: 1rem;
+  display: inline;
+}
+.homepage-inlinelogo-h1 {
+  height: 2.5rem;
+  display: inline;
+}
+.homepage-inlinelogo-h2 {
+  height: 2rem;
+  display: inline;
+}
+
+
+.homepage-event-container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: var(--background-color-2);
+  border-radius: 2em;
+  text-align: center;
+  font-family: var(--font-cinzel);
+  padding: 1em;
+}
+
+.homepage-event-container-mobile {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--background-color-2);
+  border-radius: 2em;
+  text-align: center;
+  font-family: var(--font-cinzel);
+  padding: 1em;
+}
+
+.homepage-event-container-mobile dd {
+  font-family: var(--font-cormorant);
+}
+
+.homepage-event-cards {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  display: grid;
+}
+
+.homepage-event-card {
+  width: 100%;
 }
 
 
