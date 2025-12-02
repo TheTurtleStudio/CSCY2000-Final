@@ -274,6 +274,7 @@ footer a:hover {
 }
 
 .house-apply a {
+  text-align: center;
   text-decoration: none;
   color: #0f0e0e;
 }
@@ -307,6 +308,7 @@ footer a:hover {
 }
 
 .music-fes a {
+  text-align: center;
   text-decoration: none;
   color: #0f0e0e;
 }
