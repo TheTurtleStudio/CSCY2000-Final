@@ -907,3 +907,65 @@ h1 {
 .lanjen-contact p {
     margin-bottom: 5px;
 }
+
+/*May portfolio*/
+
+/*The shape was made uniform and colored*/
+.mayport-title {
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  text-shadow: 2px 2px #c5bfaf;
+}
+
+.MAY-photo {
+  height: 300px;
+  width: 250px;
+  border-radius: 25%;
+  padding: 0 auto;
+}
+
+.mayport-info {
+  text-align: center;
+}
+
+.mayport-information {
+  margin: 2em;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+}
+
+.mayport-course {
+  margin: 2em;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+}
+
+.Thunder {
+  text-align: center;
+}
+
+.mayport-table {
+  margin: 2em;
+}
+
+/*May.html tablet*/
+@media screen and (min-width: 768px) {
+
+  /*Image and text side by side*/
+  .mayport-info {
+    display: flex;
+    justify-content: center;
+    background-color: #c5bfaf;
+    margin: 0 32px;
+    border-radius: 15px;
+  }
+
+  .mayport-information {
+    padding-top: 2em;
+  }
+}
