@@ -354,7 +354,9 @@ footer a:hover {
   }
 }
 
-/* Style for index.html mobile list */
+/* Styles for index.html mobile list */
+
+/* Styles for mobile class */
 
 .mobile {
   background-color: var(--background-color-2);
@@ -372,22 +374,26 @@ footer a:hover {
   margin-bottom: 1em;
 }
 
-/* Style for mobile Unordered list */
+/* Styles for mobile Unordered list */
 
 .magic-list {
   list-style: none;
   padding: 0;
   margin-bottom: 2em;
   display: grid;
+
+  /* Make all list items evenly spaced */
+
   grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
   overflow: hidden;
 }
 
-/* Force square aspect ratios */
 .magic-list li {
   aspect-ratio: 1;
 }
+
+/* Styles for icon function */
 
 .magic-icon {
   background-color: var(--brand-red);
@@ -404,12 +410,16 @@ footer a:hover {
   text-align: center;
 }
 
-/* Condense down to 2 columns on smaller screens, arbitrary breakpoint it just looks good */
+/* Media query for mobile */
+
 @media screen and (max-width: 628px) {
   .magic-list {
     grid-template-columns: 50% 50%;
   }
 }
+
+
+/* Styles for icon words */
 
 .magic-icon a {
   color: white;
@@ -799,13 +809,15 @@ footer a:hover {
   }
 }
 
-/* Style rules for student_life.html */
+/* Styles for student_life.html */
+
+/* Styles for header */
 
 h1 {
     font-family: var(--font-cinzel);
 }
 
-/* Style rules for student_life.html's each section */
+/* Styles for student_life.html's each section */
 
 .life-section {
     background-color: var(--background-color-2);
@@ -831,7 +843,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Style rules for student clubs and activities */
+/* Styles for student clubs and activities */
 
 .club-categories, .activities-event {
     background-color: var(--background-color-3);
@@ -848,7 +860,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-/* Style rules for student clubs list */
+/* Styles for student clubs list */
 
 .club-categories {
     display: flex;
@@ -877,15 +889,23 @@ h1 {
     font-size: 1em;
 }
 
+/* Styles for video background */
+
 .club-video {
-  text-align: center;
+  background-color: var(--background-color-3);
+  border: 1px solid var(--brand-gold);
+  border-radius: 15px;
 }
 
-video {
+/* Styles for video to set in the center */
+
+.club-video video {
+  display: block;
   margin: 0 auto;
 }
 
-/* Style rules for Hogwarts activities */
+
+/* Styles for Hogwarts activities */
 
 .activities-event {
     min-height: 150px;
@@ -895,6 +915,8 @@ video {
     font-weight: 200;
     min-width: 40%;
 }
+
+/* Styles for Hogwarts activities description */
 
 .event-describe {
     color: var(--secondary-text-color);
@@ -913,7 +935,7 @@ video {
     display: block;
 }
 
-/* Style rules for Dining Hall section with Tablet only */
+/* Styles for Dining Hall section with Tablet/Desktop only */
 
 #Tablet-desktop {
     margin-top: 20px;
@@ -926,12 +948,16 @@ video {
     width: 100%;
 }
 
+/* Styles for column titles */
+
 #Tablet-desktop th {
     background-color: var(--brand-black);
     color: var(--brand-gold);
     text-align: center;
     padding: 10px;
 }
+
+/* Styles for menu items */
 
 #Tablet-desktop td {
     border-bottom: 1px solid var(--highlight-gold-color);
@@ -943,13 +969,22 @@ video {
 }
 
 /* Media query for LanJen student_life for mobile devices */
+
 .life-grid {
     display: grid;
     grid-template-columns: auto;
     gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Styles for hiding Tablet-desktop section */
+
+#Tablet-desktop {
+  display: none;
 }
 
 /* Media query for LanJen student_life for tablet devices */
+
 @media screen and (min-width: 620px), print {
 
     .life-grid {
@@ -957,15 +992,24 @@ video {
         gap: 18px;
     }
 
+    /* Styles for showing Tablet-desktop section */
+
+    #Tablet-desktop {
+        display: block;
+    }
+
 }
 
 /* Media query for LanJen student_life for desktop devices */
+
 @media screen and (min-width: 1000px), print {
   
     .life-grid {
         grid-template-columns: auto auto auto;
         gap: 20px;
     }
+
+    /* Styles for showing Tablet-desktop section */
 
     #Tablet-desktop {
         display: block;
@@ -1009,7 +1053,7 @@ video {
     margin: 20px auto;
 }
 
-/* Circle picture */
+/* Styles for picture's shape to be circle */
 
 .lanjen-photo img {
     width: 300px;
@@ -1017,6 +1061,8 @@ video {
     border-radius: 50%;
     border: 5px solid var(--highlight-gold-color);
 }
+
+/* Styles for About's paragraph */
 
 .lanjen-about p {
     margin-bottom: 5px;
