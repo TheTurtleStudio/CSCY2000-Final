@@ -22,7 +22,7 @@ X    14.Use the Grid Layout somewhere on the Home page and use it as appropriate
 
 JavaScript
 
-(1/2)    1.You need to have at least 2 JavaScript functions associated with your pages on different pages (external javascript file)
+X    1.You need to have at least 2 JavaScript functions associated with your pages on different pages (external javascript file)
 
 CSS 
 

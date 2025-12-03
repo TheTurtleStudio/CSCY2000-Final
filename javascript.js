@@ -39,3 +39,10 @@ deans_pageLinks.forEach((link) => {
 })
 deans_displayPage(1)
 // End of deans page
+
+document
+    .getElementById("typeSel")
+    .addEventListener("change", function () {
+        document.querySelector(".future-title").textContent =
+            "You are exploring " + this.value + " pathways...";
+    });
