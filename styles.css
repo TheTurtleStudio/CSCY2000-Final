@@ -43,7 +43,11 @@
 body {
   background-color: var(--background-color-1) !important;
   color: var(--primary-text-color) !important;
-  font-family: var(--font-cormorant);
+  font-family: var(--font-cormorant) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cinzel);
 }
 
 footer {
@@ -184,7 +188,7 @@ footer a:hover {
   text-shadow: 
     0 0 8px var(--brand-black),
     0 0 12px var(--highlight-red-color);
-  font-size: 4em;
+  font-size: 3em;
   vertical-align: middle;
   width: 100%;
   margin: auto 0;
@@ -214,7 +218,7 @@ footer a:hover {
 
 .homepage-event-container {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 2em auto;
   background-color: var(--background-color-2);
   border-radius: 2em;
   text-align: center;
@@ -248,18 +252,13 @@ footer a:hover {
 }
 
 /*Latest News*/
-.latesnews {
+.latestnews {
   margin: 0 auto;
   padding: 10px;
 }
 
 .House-photo {
-  width: 100%;
-  height: 250px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 2px solid #0f0e0e;
-  padding-bottom: 0;
+  display: none;
 }
 
 .house-apply {
@@ -267,7 +266,7 @@ footer a:hover {
   padding-top: 0;
   margin-bottom: 16px;
   padding: 16px;
-  background-color: white;
+  background-color: var(--background-color-2);
   border: 2px solid #0f0e0e;
   border-radius: 15px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
@@ -287,7 +286,7 @@ footer a:hover {
   margin: 0 0 16px;
   padding: 16px;
   border: 2px solid #0f0e0e;
-  background-color: white;
+  background-color: var(--background-color-2);
   border-radius: 15px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
 }
@@ -302,7 +301,7 @@ footer a:hover {
   margin: 0 0 16px;
   padding: 16px;
   border: 2px solid #0f0e0e;
-  background-color: white;
+  background-color: var(--background-color-2);
   border-radius: 15px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
 }
@@ -321,12 +320,20 @@ footer a:hover {
 @media screen and (min-width: 768px) {
   .latestnews {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+  }
+  .House-photo {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid #0f0e0e;
+    padding-bottom: 0;
   }
   .scholarship-photo {
     display: block;
     width: 100%;
-    height: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border: 2px solid #0f0e0e;
@@ -336,7 +343,6 @@ footer a:hover {
   .music-photo {
     display: block;
     width: 100%;
-    height: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border: 2px solid #0f0e0e;
@@ -368,16 +374,22 @@ footer a:hover {
   list-style: none;
   padding: 0;
   margin-bottom: 2em;
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
-  gap: 2em;
+  overflow: hidden;
+}
+
+.magic-list li {
+  aspect-ratio: 1;
 }
 
 .magic-icon {
   background-color: var(--brand-red);
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  width: calc(100% - 1em);
+  aspect-ratio: 1;
+  margin: auto;
 
   /* Let icon words in the center */
 
@@ -385,6 +397,12 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 628px) {
+  .magic-list {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .magic-icon a {
