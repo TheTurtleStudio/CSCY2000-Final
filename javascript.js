@@ -7,6 +7,7 @@ const deans_deanCards = Array.from(deans_container.getElementsByClassName("deanl
 const deans_totalPages = Math.ceil(deans_deanCards / deans_deansPerPage);
 let deans_currentPage = 1;
 
+// Display content for certain "page"
 function deans_displayPage(pageNum) {
     const pageStart = (pageNum - 1) * deans_deansPerPage;
     const pageEnd = pageStart + deans_deansPerPage;
@@ -28,6 +29,7 @@ function deans_displayPage(pageNum) {
     })
 }
 
+//Event listener for pagination buttons
 deans_pageLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
@@ -37,12 +39,15 @@ deans_pageLinks.forEach((link) => {
         
     })
 })
+//Make first pagination button selected by default
 deans_displayPage(1)
 // End of deans page
 
+// Start of index page
 document
     .getElementById("typeSel")
     .addEventListener("change", function () {
         document.querySelector(".future-title").textContent =
             "You are exploring " + this.value + " pathways...";
     });
+// End of index page

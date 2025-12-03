@@ -70,6 +70,7 @@ footer a:hover {
   text-decoration: none;
 }
 
+/* Make the footer pretty */
 .footer-grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -88,6 +89,7 @@ footer a:hover {
   width: fit-content;
 }
 
+/* Logo float animation */
 .footer-logo {
   object-fit: contain;
   width: 50%;
@@ -99,6 +101,12 @@ footer a:hover {
   margin: 0 1.5em 0 1.5em;
 }
 
+.footer-page-credit {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+/* Logo float animation keyframes */
 @keyframes footer-logo-float {
   from {
     transform: translateY(0px);
@@ -108,11 +116,7 @@ footer a:hover {
   }
 }
 
-.footer-page-credit {
-  font-size: 0.8em;
-  margin-bottom: 0;
-}
-
+/* Extra navbar stuff, because I wanted more customization than I could do easily with bootstrap */
 .navbar a {
   color: var(--nav-text-color);
   font-family: var(--font-cormorant);
@@ -380,6 +384,7 @@ footer a:hover {
   overflow: hidden;
 }
 
+/* Force square aspect ratios */
 .magic-list li {
   aspect-ratio: 1;
 }
@@ -399,6 +404,7 @@ footer a:hover {
   text-align: center;
 }
 
+/* Condense down to 2 columns on smaller screens, arbitrary breakpoint it just looks good */
 @media screen and (max-width: 628px) {
   .magic-list {
     grid-template-columns: 50% 50%;
@@ -432,6 +438,7 @@ footer a:hover {
   margin-bottom: 0.25em;
 }
 
+/* Style the dean photos to look like swinging portraits, ooo magic-ey*/
 .dean-photo {
   width: 150px;
   height: 150px;
@@ -459,22 +466,6 @@ footer a:hover {
   grid-template-columns: auto;
 }
 
-.deans-dean-pagination {
-  text-align: center;
-}
-
-.deans-pagination-link {
-  background-color: var(--footer-color);
-  padding: 0.75em 1em;
-  text-decoration: none;
-  color: var(--footer-link-color);
-}
-
-.deans-pagination-link:hover {
-  background-color: var(--footer-link-hover-color);
-  color: var(--footer-color);
-}
-
 .dean-name {
   font-size: 1.5em;
   font-weight: bold;
@@ -489,6 +480,7 @@ footer a:hover {
   font-weight: bold;
 }
 
+/* Make the coloring not blue because why */
 .dean-link {
   text-decoration: none;
   color: inherit;
@@ -524,7 +516,7 @@ footer a:hover {
     transform: scale(1.05);
   }
 }
-
+/* Swinging portrait animations */
 @keyframes dean-card-image {
   from {
     transform: translateX(-5px);
@@ -534,6 +526,23 @@ footer a:hover {
     transform: translateX(5px);
     rotate: -2deg;
   }
+}
+
+/* Pagination styling */
+.deans-dean-pagination {
+  text-align: center;
+}
+
+.deans-pagination-link {
+  background-color: var(--footer-color);
+  padding: 0.75em 1em;
+  text-decoration: none;
+  color: var(--footer-link-color);
+}
+
+.deans-pagination-link:hover {
+  background-color: var(--footer-link-hover-color);
+  color: var(--footer-color);
 }
 
 /* Styling for Brayden portfolio */
@@ -609,6 +618,7 @@ footer a:hover {
   background-color: var(--background-color-2);
 }
 
+/* Styling for the foreground (fading one) photo on mobile */
 .braydenport-photo {
   float: none;
   display: block;
@@ -620,7 +630,6 @@ footer a:hover {
   border-top-right-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--highlight-gold-color);
-  box-shadow: var(--highlight-red-color) 0px 5px 10px;
   animation: braydenport-magic-portrait 6s linear infinite alternate;
 }
 /* Had to do some yucky calculations to get background photo aligned with front photo on mobile*/
@@ -638,7 +647,7 @@ footer a:hover {
   box-shadow: var(--highlight-red-color) 0px 5px 10px;
 }
 
-
+/* Animation for the magic disappearing Brayden */
 @keyframes braydenport-magic-portrait {
   0%,
   60% {
@@ -650,6 +659,7 @@ footer a:hover {
   }
 }
 
+/* To meet requirements */
 #Tablet-desktop {
   display: none;
 }
@@ -703,6 +713,7 @@ footer a:hover {
     color: var(--nav-active-color);
   }
 
+  /* Additional style: Just make the homepage header text bigger, looks nicer */
   .homepage-hero h1 {
     font-size: 4.5em;
   }
