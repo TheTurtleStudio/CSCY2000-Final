@@ -344,6 +344,63 @@ footer a:hover {
   }
 }
 
+/* Style for index.html mobile list */
+
+.mobile {
+  background-color: var(--background-color-2);
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 1.5em;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.mobile h2 {
+  color: var(--brand-gold);
+  font-family: var(--font-cinzel);
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Style for mobile Unordered list */
+
+.magic-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.magic-icon {
+  background-color: var(--brand-red);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+
+  /* Let icon words in the center */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.magic-icon a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-cormorant);
+  font-size: 1.4em;
+}
+
+/* Style for mobile Ordered list */
+
+.magic-step {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1em;
+}
 
 /* Styles for deans.html */
 .dean-container {
@@ -662,8 +719,8 @@ h1 {
 .life-section {
     background-color: var(--background-color-2);
     border: 1px solid var(--highlight-gold-color);
-    margin: 25px auto;
     padding: 20px;
+    margin: 25px auto;
     width: 90%;
     border-radius: 15px;
 }
@@ -692,24 +749,23 @@ h1 {
     padding: 20px;
 }
 
-.club-categories {
-    display: flex;
-    flex-direction: column;
-    height: 230px;
-}
-
-.club-categories h3, .event-title, .activities-event {
+.club-categories h3, .activities-event .event-title {
+    font-family: var(--font-cinzel);
     color: var(--primary-text-color);
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 5px;
 }
 
-.club-categories h3, .event-title {
-    font-family: var(--font-cinzel);
-}
-
 /* Style rules for student clubs list */
+
+.club-categories {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    min-width: 40%;
+}
 
 .club-categories h3 {
     background-color: var(--background-color-2);
@@ -733,18 +789,19 @@ h1 {
 /* Style rules for Hogwarts activities */
 
 .activities-event {
-    min-height: 100px;
+    min-height: 150px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    text-align: center;
     font-weight: 200;
+    min-width: 40%;
 }
 
 .event-describe {
     color: var(--secondary-text-color);
     display: none;
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 0.5em;
 }
 
 /* Description for Hogwarts activitie on hover */
@@ -773,8 +830,8 @@ h1 {
 #Tablet-desktop th {
     background-color: var(--brand-black);
     color: var(--brand-gold);
+    text-align: center;
     padding: 10px;
-    text-align: left;
 }
 
 #Tablet-desktop td {
@@ -853,6 +910,8 @@ h1 {
     margin: 20px auto;
 }
 
+/* Circle picture */
+
 .lanjen-photo img {
     width: 300px;
     height: 300px;
@@ -885,7 +944,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Style for lists */
+/* Style for Unordered lists */
 
 .lanjen-achievements ul, .lanjen-courses ul {
     padding-left: 20px;
