@@ -720,16 +720,74 @@ footer a:hover {
 }
 
 /* Styles for sports HTML*/
+
+/*Adjust the size to make it easier to see */
 .sports-img {
   width: 100%;
   height: 300px;
+  border-radius: 25px;
 }
+
+.about-sports {
+  margin: 2em;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+}
+
 .Quidditch-main {
   display: none;
 }
 
+.four-sports {
+  margin: 2em;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+}
+
+  .quidditch {
+    margin: 2em;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #c5bfaf;
+    border-radius: 15px;
+  }
+
+  .underwater-tag {
+    margin: 2em;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+  }
+
+  .FlagBattle {
+    margin: 2em;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+  }
+
+  .dodgeball {
+    margin: 2em;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #c5bfaf;
+  border-radius: 15px;
+  }
+
 /* Sports Media query for tablet*/
 @media screen and (min-width: 600px) {
+
+  /*Adjusted the size of the image*/
+
+  .Quidditch-mainphoto {
+    text-align: center;
+  }
+
   .Quidditch-main {
     display: block;
     width: 100%;
