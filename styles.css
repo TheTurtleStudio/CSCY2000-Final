@@ -877,6 +877,14 @@ h1 {
     font-size: 1em;
 }
 
+.club-video {
+  text-align: center;
+}
+
+video {
+  margin: 0 auto;
+}
+
 /* Style rules for Hogwarts activities */
 
 .activities-event {
