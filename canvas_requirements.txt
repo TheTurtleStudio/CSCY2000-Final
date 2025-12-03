@@ -2,9 +2,9 @@ Your team's website MUST include:
 
 X    1.Must have Responsive Design. Start with mobile first
 X    2.Enough content to appear complete
-        Each page should include proper text headings and typographical hierarchy (i.e. font family and the words should look good)
-(2/4)    3.Each person in the group must complete 2 pages (Home page is not counted as an individual page as the GROUP should be working together on this page). 
-        One of these pages is a personal portfolio (resume) for a total of 2. The portfolio should look professional and have actual content. This content can be totally made up if you wish but you do need to include a picture of yourself on your portfolio.
+X       Each page should include proper text headings and typographical hierarchy (i.e. font family and the words should look good)
+X    3.Each person in the group must complete 2 pages (Home page is not counted as an individual page as the GROUP should be working together on this page). 
+X       One of these pages is a personal portfolio (resume) for a total of 2. The portfolio should look professional and have actual content. This content can be totally made up if you wish but you do need to include a picture of yourself on your portfolio.
     4.Use comments that explain what each section does
 X    5.Add a logo
 X    6.A standard navigation bar on one line AND include a hamburger menu for mobile
@@ -17,7 +17,7 @@ X    11.Embed a map on one of the pages.
 X    12.One page that includes a table, such as numbers from a spreadsheet, price sheet, or a comparison chart. 
 X        Name it <id Tablet-desktop>
 X    13.Include a form with different inputs (ie. checkbox, radio, textarea, password, etc.) but it MUST have at least 4 different inputs as well as a SUBMIT button
-    14.Use the Grid Layout somewhere on the Home page and use it as appropriate for different viewports.
+X    14.Use the Grid Layout somewhere on the Home page and use it as appropriate for different viewports.
     15.Add audio or video to your site and make it applicable to your pages, (it should enhance your pages). (10 points EXTRA CREDIT)
 
 JavaScript
