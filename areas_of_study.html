@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/owl.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/owl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Areas of Study</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
-    >
+    />
 
     <!-- Bootstrap -->
     <link
@@ -24,7 +24,7 @@
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-    >
+    />
     <style>
       * {
         margin: 0;
@@ -167,7 +167,7 @@
           src="images/logo.png"
           alt="Southern Hogwarts University"
           class="shu-nav-logo"
-        >
+        />
       </a>
 
       <!-- Hamburger icon from bootstrap -->
@@ -201,16 +201,22 @@
       </div>
     </nav>
     <main>
+      <!--  groups primary page content -->
       <section class="frame">
+        <!--  isolates study section -->
         <div class="headding">
+          <!--  groups title text -->
           <h1>Areas of Study</h1>
           <p>Choose your magical path at Southern Hogwarts University.</p>
         </div>
 
         <div class="pathway-card-holder">
-          <!-- Ghoul Studies -->
+          <!--  holds multiple cards -->
+
           <section class="pathway-card">
+            <!--  separate program block -->
             <p class="symbol">👻</p>
+            <!--  visual identifier -->
             <h2>Ghoul Studies</h2>
             <p>
               Learn to interact with spirits, ghosts, and other spectral beings.
@@ -219,18 +225,18 @@
               library visits.
             </p>
             <div class="pathway-req">
+              <!--  groups requirements -->
               <h4>Requirements:</h4>
               <ul>
-                <li>Strong constitution and mental fortitude</li>
-                <li>Open-minded and curious about the afterlife</li>
-                <li>Basic Magical Theory completed</li>
-                <li>Need a Recommendation from a practicing spirit medium</li>
+                <li>Affinity for water and emotions</li>
+                <li>Elemental Foundations completed</li>
+                <li>Basic Understanding of marine life</li>
               </ul>
             </div>
           </section>
 
-          <!-- Water Magic -->
           <section class="pathway-card">
+            <!--  another program block -->
             <p class="symbol">💧</p>
             <h2>Water Magic</h2>
             <p>
@@ -247,8 +253,8 @@
             </div>
           </section>
 
-          <!-- Thunder and Lightning -->
           <section class="pathway-card">
+            <!--  separate lightning program -->
             <p class="symbol">⚡</p>
             <h2>Thunder and Lightning</h2>
             <p>
@@ -266,8 +272,8 @@
             </div>
           </section>
 
-          <!-- Arcane Studies -->
           <section class="pathway-card">
+            <!--  separate arcane program -->
             <p class="symbol">🔮</p>
             <h2>Arcane Studies</h2>
             <p>
@@ -287,72 +293,71 @@
           </section>
         </div>
       </section>
+
       <section class="frame" id="applicationForm">
+        <!--  dedicated form area -->
         <div class="headding">
+          <!--  form heading -->
           <h2>Apply to Southern Hogwarts University</h2>
           <p>
             Take your first steps toward magical greatness by submitting your
             application.
           </p>
         </div>
+
         <div class="application">
+          <!--  contains form -->
           <form>
+            <!--  collects user data -->
             <div class="application-card">
-              <label class="form-label"> Full Name: </label>
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Enter your full name"
-              >
+              <!--  isolate field -->
+              <label> Full Name: </label>
+              <input type="text" />
             </div>
+
             <div class="application-card">
-              <label class="form-label"> Email Address: </label>
-              <input
-                class="form-control"
-                type="email"
-                placeholder="Enter your email address"
-              >
+              <!--  separate input -->
+              <label>Email Address:</label>
+              <input type="email" />
             </div>
+
             <div class="application-card">
-              <label class="form-label"> Age </label>
-              <input
-                class="form-control"
-                type="number"
-                placeholder="Enter your age"
-              >
+              <!--  structured input -->
+              <label>Age</label>
+              <input type="number" />
             </div>
+
             <div class="application-card">
-              <label class="form-label"> Area of Study: </label>
-              <select class="form-select">
-                <option>Select your Preferred area of study</option>
-                <option>Ghoul Studies</option>
-                <option>Water Magic</option>
-                <option>Thunder and Lightning</option>
-                <option>Arcane Studies</option>
+              <!--  isolated select -->
+              <label>Area of Study:</label>
+              <select>
+                ...
               </select>
             </div>
+
             <div class="application-card">
-              <label class="form-label"> Reason for Attending:</label>
-              <textarea
-                class="form-control"
-                rows="4"
-                placeholder="Why do you wish to study at Southern Hogwarts University?"
-              ></textarea>
+              <!--  isolate textarea -->
+              <label>Reason for Attending:</label>
+              <textarea></textarea>
             </div>
+
             <button type="submit" class="application-btn">
+              <!--  triggers form -->
               Submit Application
             </button>
           </form>
         </div>
       </section>
+
       <section class="frame">
+        <!--  separate quote block -->
         <div class="quote">
-          "At Southern Hogwarts University, we believe that every student has
-          the protential to achieve magical greateness throught dedication,
-          discipline, and proper guidance."
+          <!--  style quote independently -->
+          "At Southern Hogwarts University..."
         </div>
       </section>
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -392,7 +397,7 @@
             src="images/logo.png"
             alt="Southern Hogwarts University Logo"
             class="footer-logo"
-          >
+          />
           <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
           <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
         </div>
