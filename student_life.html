@@ -1,318 +1,320 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/owl.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <title>Southern Hogwarts University: Student Life</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="./images/owl.ico" type="image/x-icon">
+      <link rel="stylesheet" href="styles.css">
+      <title>Southern Hogwarts University: Student Life</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <!-- Use bootstrap nav classes and stop displaying burger when screen is at large breakpoint -->
-    <nav class="navbar navbar-expand-md shu-navbar sticky-top">
-        <a class="navbar-brand shu-brand" href="index.html">
-            <img src="images/logo.png" alt="Southern Hogwarts University" class="shu-nav-logo">
-        </a>
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- Use bootstrap nav classes and stop displaying burger when screen is at large breakpoint -->
+      <nav class="navbar navbar-expand-md shu-navbar sticky-top">
+          <a class="navbar-brand shu-brand" href="index.html">
+              <img src="images/logo.png" alt="Southern Hogwarts University" class="shu-nav-logo">
+          </a>
 
-        <!-- Hamburger icon from bootstrap -->
-        <button class="navbar-toggler navbar-dark shu-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#shu-navbar-content">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- Hamburger icon from bootstrap -->
+          <button class="navbar-toggler navbar-dark shu-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#shu-navbar-content">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="shu-navbar-content">
-            <ul class="navbar-nav shu-nav-links">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="deans.html">Deans List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="student_life.html">Student Life</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="areas_of_study.html">Study Pathways</a>
-                </li>
-            </ul>
+          <div class="collapse navbar-collapse" id="shu-navbar-content">
+              <ul class="navbar-nav shu-nav-links">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="deans.html">Deans List</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="sports.html">Sports</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="student_life.html">Student Life</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="areas_of_study.html">Study Pathways</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      
+      <header class="text-center">
+        <div class="container">
+
+          <!-- Title for the page -->
+          <h1>Student Life</h1>
+          <p>
+            Learn more about student life at your college. <br>
+            Find clubs that match your interests and enjoy your college life.
+          </p>
         </div>
-    </nav>
-    
-    <header class="text-center">
-      <div class="container">
+      </header>
 
-        <!-- Title for the page -->
-        <h1>Student Life</h1>
-        <p>
-          Learn more about student life at your college. <br />
-          Find clubs that match your interests and enjoy your college life.
-        </p>
-      </div>
-    </header>
+      <main class="container">
+        <!-- Different categories club using list to show -->
+        <section id="life-club" class="life-section">
 
-    <main class="container">
-      <!-- Different categories club using list to show -->
-      <section id="life-club" class="life-section">
+          <h2>Student Clubs</h2>
+          <p>Explore Your Magical Passion</p>
 
-        <h2>Student Clubs</h2>
-        <p>Explore Your Magical Passion</p>
+          <div class="life-grid">
 
-        <div class="life-grid">
+            <div class="club-categories">
+              <h3>Magic</h3>
 
-          <div class="club-categories">
-            <h3>Magic</h3>
-
-            <!-- Unordered list for Magic clubs -->
-            <ul>
-              <li>Wand Club</li>
-              <li>Illusion Club</li>
-              <li>Incantation Club</li>
-              <li>Invisibility Club</li>
-            </ul>
-          </div>
-
-          <div class="club-categories">
-            <h3>Power</h3>
-
-            <!-- Unordered list for Power clubs -->
-            <ul>
-              <li>Defense Club</li>
-              <li>Energy Boost Club</li>
-              <li>Battle Skills Club</li>
-            </ul>
-          </div>
-
-          <div class="club-categories">
-            <h3>Culinary</h3>
-
-            <!-- Unordered list for Culinary clubs -->
-            <ul>
-              <li>Cooking Club</li>
-              <li>Baking Club</li>
-              <li>Snack Club</li>
-              <li>Drink Club</li>
-              <li>Sweet Dessert Club</li>
-            </ul>
-          </div>
-
-          <div class="club-categories">
-            <h3>Creatures</h3>
-
-            <!-- Unordered list for Creatures clubs -->
-            <ul>
-              <li>Pet Care Club</li>
-              <li>Creature Club</li>
-              <li>Animal Rescue Club</li>
-            </ul>
-          </div>
-
-          <div class="club-categories">
-            <h3>Adventure</h3>
-
-            <!-- Unordered list for Adventure clubs -->
-            <ul>
-              <li>Exploration Club</li>
-              <li>Hiking Club</li>
-              <li>Hunting Club</li>
-            </ul>
-          </div>
-
-          <div class="club-categories">
-            <h3>Medical</h3>
-
-            <!-- Unordered list for Medical clubs -->
-            <ul>
-              <li>Healing Club</li>
-              <li>Aid Club</li>
-              <li>Potions Club</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- To show a video about how to choose clubs -->
-        <h2>How to choose your Magic Club</h2>
-        <p>Follow the video to learn how to choose the right club for you.</p>
-
-        <div class="club-video">
-
-          <!-- Video from Youtube link:https://www.youtube.com/shorts/qklRt4SWEtc -->
-          <video controls max-width="400px">
-            <source src="videos/how_to _choose_clubs.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </section>
-
-      <!-- Describe different event details -->
-      <section class="life-section life-activities">
-        <h2>Hogwarts Activities</h2>
-        <p>Events and traditions around campus.</p>
-
-        <div class="life-grid">
-
-          <!-- Event to welcome new student -->
-          <div class="activities-event">
-            <p class="event-title">Welcome Feast</p>
-            <p class="event-describe">
-              A welcome event for new students to meet each other, explore the
-              campus, and start the new semester with good energy.
-            </p>
-          </div>
-
-          <!-- Event for sorting and explore student's deans -->
-          <div class="activities-event">
-            <p class="event-title">Ability Trial</p>
-            <p class="event-describe">
-              A simple magic trial where students discover their strengths
-              before getting sorted into their house.
-            </p>
-          </div>
-
-          <!-- A competition of magic games -->
-          <div class="activities-event">
-            <p class="event-title">Magic Cup</p>
-            <p class="event-describe">
-              Houses join fun magic games and sports to earn points for the
-              House Cup.
-            </p>
-          </div>
-
-          <!-- Winter Celebration -->
-          <div class="activities-event">
-            <p class="event-title">Winter Festival</p>
-            <p class="event-describe">
-              A winter event with lights and small activities. It feels cozy and
-              magical.
-            </p>
-          </div>
-
-          <!-- New Year’s Countdown -->
-          <div class="activities-event">
-            <p class="event-title">Countdown</p>
-            <p class="event-describe">
-              A New Year’s Eve countdown with fireworks and magic lights at
-              midnight.
-            </p>
-          </div>
-
-          <!-- Student study together in the Library -->
-          <div class="activities-event">
-            <p class="event-title">Study Night</p>
-            <p class="event-describe">
-              A quiet study night in the Library with snacks and drinks before
-              exams.
-            </p>
-          </div>
-
-          <!-- Picnic event -->
-          <div class="activities-event">
-            <p class="event-title">Picnic Day</p>
-            <p class="event-describe">
-              A simple picnic on the grass with food, games, and chat with
-              friends.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Table of Dining hall's meals and only showed on tablet and desktop-->
-      <section id="Tablet-desktop" class="life-section">
-        <h2>Dining Hall</h2>
-        <p>Popular meals served in the Student Dining Hall.</p>
-
-        <table>
-
-          <!-- Column titles for the dining table -->
-          <tr>
-            <th>Meal</th>
-            <th>Price</th>
-            <th>Ingredients</th>
-            <th>Calories</th>
-          </tr>
-
-          <!-- Menu items 1 -->
-          <tr>
-            <td>Magic Chicken Bowl</td>
-            <td>$9.09</td>
-            <td>Chicken, rice, vegetables, magic sauce</td>
-            <td>620 kcal</td>
-          </tr>
-
-          <!-- Menu items 2 -->
-          <tr>
-            <td>Juicy Pasta</td>
-            <td>$7.49</td>
-            <td>Pasta, fruits, cheese, cream</td>
-            <td>711 kcal</td>
-          </tr>
-
-          <!-- Menu items 3 -->
-          <tr>
-            <td>Beef Sandwich</td>
-            <td>$8.25</td>
-            <td>Beef, cheese, vegetables, bread</td>
-            <td>838 kcal</td>
-          </tr>
-
-          <!-- Menu items 4 -->
-          <tr>
-            <td>Cookie Salad</td>
-            <td>$6.10</td>
-            <td>Cookie, vegetables, sweet sauce</td>
-            <td>540 kcal</td>
-          </tr>
-
-          <!-- Menu items 5 -->
-          <tr>
-            <td>Rainbow Fried Rice</td>
-            <td>$7.88</td>
-            <td>Rice, egg, vegetables, soy sauce</td>
-            <td>623 kcal</td>
-          </tr>
-        </table>
-      </section>
-    </main>
-    
-    <footer>
-        <div class="footer-grid mobile-footer">
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="deans.html" class="footer-link">Deans List</a>
-                <a href="sports.html" class="footer-link">Sports</a>
-                <a href="student_life.html" class="footer-link">Student Life</a>
+              <!-- Unordered list for Magic clubs -->
+              <ul>
+                <li>Wand Club</li>
+                <li>Illusion Club</li>
+                <li>Incantation Club</li>
+                <li>Invisibility Club</li>
+              </ul>
             </div>
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <a href="areas_of_study.html#applicationForm" class="footer-link">Apply</a>
-                <a href="areas_of_study.html" class="footer-link">Study Pathways</a>
+
+            <div class="club-categories">
+              <h3>Power</h3>
+
+              <!-- Unordered list for Power clubs -->
+              <ul>
+                <li>Defense Club</li>
+                <li>Energy Boost Club</li>
+                <li>Battle Skills Club</li>
+              </ul>
             </div>
-            <div class="footer-section">
-                <h3>Faculty / Staff</h3>
-                <a href="portfolios/Brayden.html" class="footer-link">Dr. Brayden Peterson</a>
-                <a href="portfolios/Lanjen.html" class="footer-link">Dr. Lanjen Hsieh</a>
-                <a href="portfolios/May.html" class="footer-link">Dr. May Miura</a>
-                <a href="portfolios/Riley.html" class="footer-link">Dr. Riley McCurdy</a>
+
+            <div class="club-categories">
+              <h3>Culinary</h3>
+
+              <!-- Unordered list for Culinary clubs -->
+              <ul>
+                <li>Cooking Club</li>
+                <li>Baking Club</li>
+                <li>Snack Club</li>
+                <li>Drink Club</li>
+                <li>Sweet Dessert Club</li>
+              </ul>
             </div>
-            <div class="footer-section">
-                <img src="images/logo.png" alt="Souther Hogwarts University Logo" class="footer-logo">
-                <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
-                <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
+
+            <div class="club-categories">
+              <h3>Creatures</h3>
+
+              <!-- Unordered list for Creatures clubs -->
+              <ul>
+                <li>Pet Care Club</li>
+                <li>Creature Club</li>
+                <li>Animal Rescue Club</li>
+              </ul>
             </div>
-        </div>
-        <p class="footer-page-credit">Student Life page created by <a href="portfolios/Lanjen.html">Lanjen Hsieh</a></p>
-    </footer>
+
+            <div class="club-categories">
+              <h3>Adventure</h3>
+
+              <!-- Unordered list for Adventure clubs -->
+              <ul>
+                <li>Exploration Club</li>
+                <li>Hiking Club</li>
+                <li>Hunting Club</li>
+              </ul>
+            </div>
+
+            <div class="club-categories">
+              <h3>Medical</h3>
+
+              <!-- Unordered list for Medical clubs -->
+              <ul>
+                <li>Healing Club</li>
+                <li>Aid Club</li>
+                <li>Potions Club</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- To show a video about how to choose clubs -->
+          <h2>How to choose your Magic Club</h2>
+          <p>Follow the video to learn how to choose the right club for you.</p>
+
+          <div class="club-video">
+
+            <!-- Video from Youtube link:https://www.youtube.com/shorts/qklRt4SWEtc -->
+            <video controls style="max-width: 400px;">
+              <source src="videos/how_to_choose_clubs.mp4" type="video/mp4">
+              Your browser does not support this video.
+            </video>
+          </div>
+        </section>
+
+        <!-- Describe different event details -->
+        <section class="life-section life-activities">
+          <h2>Hogwarts Activities</h2>
+          <p>Events and traditions around campus.</p>
+
+          <div class="life-grid">
+
+            <!-- Event to welcome new student -->
+            <div class="activities-event">
+              <p class="event-title">Welcome Feast</p>
+              <p class="event-describe">
+                A welcome event for new students to meet each other, explore the
+                campus, and start the new semester with good energy.
+              </p>
+            </div>
+
+            <!-- Event for sorting and explore student's deans -->
+            <div class="activities-event">
+              <p class="event-title">Ability Trial</p>
+              <p class="event-describe">
+                A simple magic trial where students discover their strengths
+                before getting sorted into their house.
+              </p>
+            </div>
+
+            <!-- A competition of magic games -->
+            <div class="activities-event">
+              <p class="event-title">Magic Cup</p>
+              <p class="event-describe">
+                Houses join fun magic games and sports to earn points for the
+                House Cup.
+              </p>
+            </div>
+
+            <!-- Winter Celebration -->
+            <div class="activities-event">
+              <p class="event-title">Winter Festival</p>
+              <p class="event-describe">
+                A winter event with lights and small activities. It feels cozy and
+                magical.
+              </p>
+            </div>
+
+            <!-- New Year’s Countdown -->
+            <div class="activities-event">
+              <p class="event-title">Countdown</p>
+              <p class="event-describe">
+                A New Year’s Eve countdown with fireworks and magic lights at
+                midnight.
+              </p>
+            </div>
+
+            <!-- Student study together in the Library -->
+            <div class="activities-event">
+              <p class="event-title">Study Night</p>
+              <p class="event-describe">
+                A quiet study night in the Library with snacks and drinks before
+                exams.
+              </p>
+            </div>
+
+            <!-- Picnic event -->
+            <div class="activities-event">
+              <p class="event-title">Picnic Day</p>
+              <p class="event-describe">
+                A simple picnic on the grass with food, games, and chat with
+                friends.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Table of Dining hall's meals and only showed on tablet and desktop-->
+        <section id="Tablet-desktop" class="life-section">
+          <h2>Dining Hall</h2>
+          <p>Popular meals served in the Student Dining Hall.</p>
+
+          <table>
+
+            <!-- Column titles for the dining table -->
+            <tr>
+              <th>Meal</th>
+              <th>Price</th>
+              <th>Ingredients</th>
+              <th>Calories</th>
+            </tr>
+
+            <!-- Menu items 1 -->
+            <tr>
+              <td>Magic Chicken Bowl</td>
+              <td>$9.09</td>
+              <td>Chicken, rice, vegetables, magic sauce</td>
+              <td>620 kcal</td>
+            </tr>
+
+            <!-- Menu items 2 -->
+            <tr>
+              <td>Juicy Pasta</td>
+              <td>$7.49</td>
+              <td>Pasta, fruits, cheese, cream</td>
+              <td>711 kcal</td>
+            </tr>
+
+            <!-- Menu items 3 -->
+            <tr>
+              <td>Beef Sandwich</td>
+              <td>$8.25</td>
+              <td>Beef, cheese, vegetables, bread</td>
+              <td>838 kcal</td>
+            </tr>
+
+            <!-- Menu items 4 -->
+            <tr>
+              <td>Cookie Salad</td>
+              <td>$6.10</td>
+              <td>Cookie, vegetables, sweet sauce</td>
+              <td>540 kcal</td>
+            </tr>
+
+            <!-- Menu items 5 -->
+            <tr>
+              <td>Rainbow Fried Rice</td>
+              <td>$7.88</td>
+              <td>Rice, egg, vegetables, soy sauce</td>
+              <td>623 kcal</td>
+            </tr>
+          </table>
+        </section>
+      </main>
+      
+      <footer>
+          <div class="footer-grid mobile-footer">
+              <div class="footer-section">
+                  <h3>Navigation</h3>
+                  <a href="index.html" class="footer-link">Home</a>
+                  <a href="deans.html" class="footer-link">Deans List</a>
+                  <a href="sports.html" class="footer-link">Sports</a>
+                  <a href="student_life.html" class="footer-link">Student Life</a>
+              </div>
+              <div class="footer-section">
+                  <h3>Resources</h3>
+                  <a href="areas_of_study.html#applicationForm" class="footer-link">Apply</a>
+                  <a href="areas_of_study.html" class="footer-link">Study Pathways</a>
+              </div>
+              <div class="footer-section">
+                  <h3>Faculty / Staff</h3>
+                  <a href="portfolios/Brayden.html" class="footer-link">Dr. Brayden Peterson</a>
+                  <a href="portfolios/Lanjen.html" class="footer-link">Dr. Lanjen Hsieh</a>
+                  <a href="portfolios/May.html" class="footer-link">Dr. May Miura</a>
+                  <a href="portfolios/Riley.html" class="footer-link">Dr. Riley McCurdy</a>
+              </div>
+              <div class="footer-section">
+                  <img src="images/logo.png" alt="Southern Hogwarts University Logo" class="footer-logo">
+                  <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
+                  <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
+              </div>
+          </div>
+          <p class="footer-page-credit">Student Life page created by <a href="portfolios/Lanjen.html">Lanjen Hsieh</a></p>
+      </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>

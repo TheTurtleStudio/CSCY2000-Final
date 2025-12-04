@@ -1,142 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/owl.ico" type="image/x-icon">
-    <title>Riley McCrudy - Dean of Arcane Magic</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>Riley McCurdy - Dean of Arcane Magic</title>
+    <link rel="stylesheet" href="../styles.css">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
-    />
+    >
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-    />
+    >
+    <style>
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .frame {
+        background-color: white;
+        border: 3px solid #6b4a3a;
+        border-radius: 10px;
+        padding: 30px;
+      }
+
+      .headding {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+      }
+
+      .headding h1 {
+        font-size: 2.5rem;
+        color: #6b4a3a;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .headding p {
+        font-style: italic;
+        margin-top: 10px;
+        max-width: 800px;
+      }
+
+      /* Profile section */
+
+      .profile {
+        display: flex;
+        gap: 30px;
+        margin: 25px 0;
+        align-items: flex-start;
+      }
+
+      .symbol img {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #8b6b4d;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: #e0d5c0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        color: white;
+      }
+
+      .biography {
+        flex: 1;
+      }
+
+      .biography h2 {
+        color: #6b4a3a;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .biography p {
+        text-align: justify;
+        margin-bottom: 15px;
+      }
+
+      .philosophy {
+        background-color: #fdf9f3;
+        padding: 20px;
+        border-left: 5px solid #d4af37;
+        border-radius: 6px;
+        margin: 25px 0;
+      }
+
+      .philosophy h3 {
+        color: #6b4a3a;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .achivements h3,
+      .classes h3 {
+        color: #6b4a3a;
+        text-transform: uppercase;
+        margin-top: 25px;
+      }
+
+      .riley-ul {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      .riley-li {
+        margin: 6px 0;
+      }
+
+      .contact {
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #8b6b4d;
+        font-style: italic;
+        color: #6b4a3a;
+      }
+    </style>
   </head>
-  <style>
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .frame {
-      background-color: white;
-      border: 3px solid #6b4a3a;
-      border-radius: 10px;
-      padding: 30px;
-    }
-
-    .headding {
-      text-align: center;
-      margin-bottom: 30px;
-      padding: 20px;
-    }
-
-    .headding h1 {
-      font-size: 2.5rem;
-      color: #6b4a3a;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    .headding p {
-      font-style: italic;
-      margin-top: 10px;
-      max-width: 800px;
-    }
-
-    /* Profile section */
-
-    .profile {
-      display: flex;
-      gap: 30px;
-      margin: 25px 0;
-      align-items: flex-start;
-    }
-
-    .symbol img {
-      width: 200px;
-      height: 200px;
-      border: 2px solid #8b6b4d;
-      border-radius: 50%;
-      object-fit: cover;
-      background-color: #e0d5c0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 5rem;
-      color: white;
-    }
-
-    .biography {
-      flex: 1;
-    }
-
-    .biography h2 {
-      color: #6b4a3a;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .biography p {
-      text-align: justify;
-      margin-bottom: 15px;
-    }
-
-    .philosophy {
-      background-color: #fdf9f3;
-      padding: 20px;
-      border-left: 5px solid #d4af37;
-      border-radius: 6px;
-      margin: 25px 0;
-    }
-
-    .philosophy h3 {
-      color: #6b4a3a;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .achivements h3,
-    .classes h3 {
-      color: #6b4a3a;
-      text-transform: uppercase;
-      margin-top: 25px;
-    }
-
-    .riley-ul {
-      padding-left: 20px;
-      margin: 10px 0;
-    }
-
-    .riley-li {
-      margin: 6px 0;
-    }
-
-    .contact {
-      margin-top: 30px;
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid #8b6b4d;
-      font-style: italic;
-      color: #6b4a3a;
-    }
-  </style>
   <body>
     <!-- Use bootstrap nav classes and stop displaying burger when screen is at large breakpoint -->
     <nav class="navbar navbar-expand-md shu-navbar sticky-top">
@@ -145,7 +145,7 @@
           src="../images/logo.png"
           alt="Southern Hogwarts University"
           class="shu-nav-logo"
-        />
+        >
       </a>
 
       <!-- Hamburger icon from bootstrap -->
@@ -186,7 +186,7 @@
         </div>
 
         <div class="profile">
-          <p class="symbol"><img src="/images/riley.jpg" alt="🔮" /></p>
+          <p class="symbol"><img src="../images/riley.jpg" alt="🔮"></p>
           <div class="biography">
             <h2>Arcane Scholar & Mentor</h2>
             <p>
@@ -251,7 +251,7 @@
         <div class="contact">
           <p>
             Ofice Hours: Mondasy & Thursdays, 2-5 PM (by appointment) - Tower of
-            Echoes, Room 7B <br />
+            Echoes, Room 7B <br>
             Email: r.mccurdy@shu.edu.uk
           </p>
           <p></p>
@@ -291,9 +291,9 @@
         <div class="footer-section">
           <img
             src="../images/logo.png"
-            alt="Souther Hogwarts University Logo"
+            alt="Southern Hogwarts University Logo"
             class="footer-logo"
-          />
+          >
           <!-- This is a fake address I came up with, the zip code spells MAGIC on a telephone keypad and Hogsmeade is a small village near Hogwarts in the Harry Potter universe-->
           <p>314 Dementor Lane, Hogsmeade, UK 62442</p>
         </div>
