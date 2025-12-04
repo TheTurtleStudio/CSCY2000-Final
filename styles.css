@@ -1000,22 +1000,6 @@ h1 {
 
 }
 
-/* Media query for LanJen student_life for desktop devices */
-
-@media screen and (min-width: 1000px), print {
-  
-    .life-grid {
-        grid-template-columns: auto auto auto;
-        gap: 20px;
-    }
-
-    /* Styles for showing Tablet-desktop section */
-
-    #Tablet-desktop {
-        display: block;
-    }
-}
-
 /* LanJen portfolio page */
 
 /* Title section */
@@ -1172,4 +1156,20 @@ h1 {
   .mayport-information {
     padding-top: 2em;
   }
+}
+
+/* Media query for LanJen student_life for desktop devices */
+
+@media screen and (min-width: 992px), print {
+  
+    .life-grid {
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    /* Styles for showing Tablet-desktop section */
+
+    #Tablet-desktop {
+        display: block;
+    }
 }

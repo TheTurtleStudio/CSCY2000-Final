@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/owl.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <title>Southern Hogwarts University: Deans</title>
 
@@ -220,7 +221,8 @@
           alt="SHU"
         />
       </h1>
-      <p>Some about content here</p>
+      <p>Here at SHU, we aspire to teach the greatest witches and wizards alike. Founded centuries ago, SHU has now grown into one of the most prestigious wizardy institutions in the nation. Students who walk our corridors discover a new world, where quills take notes of their own and strange creatures roam the lands.</p>
+      <p>Step into SHU and let the journey to extraordinary begin. Just be mindful to never forget our most important rule: <b>never feed the gargoyles after midnight.</b></p>
       <div class="homepage-event-container-mobile mobile" id="events-mobile">
         <h2>
           <img
@@ -443,8 +445,14 @@
         </div>
       </div>
     </footer>
-
-    <script src="javascript.js"></script>
+    <script>
+        document
+            .getElementById("typeSel")
+            .addEventListener("change", function () {
+                document.querySelector(".future-title").textContent =
+                    "You are exploring " + this.value + " pathways...";
+            });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

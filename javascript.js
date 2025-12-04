@@ -42,12 +42,3 @@ deans_pageLinks.forEach((link) => {
 //Make first pagination button selected by default
 deans_displayPage(1)
 // End of deans page
-
-// Start of index page
-document
-    .getElementById("typeSel")
-    .addEventListener("change", function () {
-        document.querySelector(".future-title").textContent =
-            "You are exploring " + this.value + " pathways...";
-    });
-// End of index page
