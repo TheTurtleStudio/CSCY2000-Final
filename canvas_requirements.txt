@@ -43,6 +43,6 @@ X        Hide Mobile Required (list)
 X        ShowTablet-desktop (table)
 X        Grid Layout Used
 X        Add pseudo classes (2 different ones) to the nav (hover, active, etc.)
-(1/3)        3 different styles applied of your choice and not used above AND MAKE SURE YOU COMMENT WHAT YOU DID
+(2/3)        3 different styles applied of your choice and not used above AND MAKE SURE YOU COMMENT WHAT YOU DID
 
 MAKE SURE YOU VALIDATE ALL PAGES
